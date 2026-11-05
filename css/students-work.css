@@ -1,0 +1,206 @@
+/* ===== Student Works page (self-contained) ===== */
+:root {
+  --navy: #12304f;
+  --orange: #f26a2e;
+  --text: #1a1a1a;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: "Source Sans Pro", Arial, sans-serif;
+  color: var(--text);
+  background: #ffffff;
+  line-height: 1.5;
+}
+
+a { text-decoration: none; color: inherit; }
+img { max-width: 100%; display: block; }
+
+/* ---------- Contact strip ---------- */
+.contact-strip {
+  background: var(--navy);
+  color: #fff;
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 10px 60px;
+  flex-wrap: wrap;
+}
+.strip-left span { margin-right: 18px; }
+
+/* ---------- Header ---------- */
+.site-header {
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 60px;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.logo { height: 58px; width: auto; }
+.main-menu { display: flex; align-items: center; gap: 18px; font-size: 14px; flex-wrap: wrap; }
+.main-menu a:hover { color: var(--orange); }
+.main-menu .enquire { background: var(--navy); color: #fff; padding: 8px 16px; border-radius: 3px; font-weight: 600; }
+.main-menu .enquire:hover { color: #fff; background: var(--orange); }
+
+/* ---------- Announcement bar ---------- */
+.announce-bar {
+  background: var(--navy);
+  color: #fff;
+  font-size: 13px;
+  padding: 10px 60px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* ---------- Breadcrumb ---------- */
+.breadcrumb {
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 22px 30px 10px;
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--orange);
+  background: #fff;
+}
+.breadcrumb span { color: #888; margin: 0 6px; }
+
+/* ---------- Programme nav ---------- */
+.programme-nav {
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 14px 30px 24px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  background: #fff;
+}
+.programme-nav a {
+  font-size: 15px;
+  padding: 4px 10px 6px;
+  color: #222;
+  border-bottom: 2px solid transparent;
+}
+.programme-nav a:hover { color: var(--orange); }
+.programme-nav a.active { font-weight: 700; border-bottom-color: var(--orange); }
+
+/* ---------- Main ---------- */
+main { max-width: 1250px; margin: 0 auto; padding: 40px 40px 140px; }
+
+.cat-title {
+  font-size: 32px;
+  font-weight: 400;
+  border-left: 5px solid var(--orange);
+  padding: 8px 0 8px 14px;
+  margin: 70px 0 34px;
+  line-height: 1.3;
+}
+.cat-title:first-child { margin-top: 20px; }
+
+/* ---------- Work cards ---------- */
+.work-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 90px;
+  padding: 0 4%;
+}
+
+.work-card {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 5 / 4;
+  border-radius: 3px;
+  background: #fff;
+  cursor: pointer;
+  outline: none;
+}
+.work-card img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.work-card .colour { opacity: 0; }
+
+.work-card:hover .colour,
+.work-card:focus .colour,
+.work-card.show .colour { opacity: 1; }
+
+.work-card:hover img,
+.work-card:focus img,
+.work-card.show img { transform: scale(1.04); }
+
+/* Stretch the Form Exploration image to fill its whole card */
+.work-card img[src*="form%20exploration"] { object-fit: fill; }
+
+/* ---------- Design shop banner ---------- */
+.shop-banner {
+  position: relative;
+  margin: 90px 4% 0;
+  aspect-ratio: 2.3 / 1;
+  overflow: hidden;
+  border-radius: 3px;
+}
+.shop-banner img { width: 100%; height: 100%; object-fit: cover; }
+.shop-banner::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0) 45%);
+}
+.shop-caption {
+  position: absolute;
+  left: 40px;
+  bottom: 26px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  z-index: 2;
+}
+.shop-caption strong { font-size: 18px; font-weight: 400; }
+.shop-caption span { font-size: 13px; }
+
+/* ---------- Footer ---------- */
+.site-footer { background: #0a3a5c; color: #fff; padding: 40px 40px 20px; }
+.footer-inner { max-width: 1200px; margin: 0 auto; }
+.footer-top { border-bottom: 1px solid rgba(255, 255, 255, 0.2); padding-bottom: 14px; margin-bottom: 22px; }
+.footer-logo { height: 48px; width: auto; background: #fff; padding: 4px 8px; border-radius: 4px; }
+.footer-cols { display: grid; grid-template-columns: repeat(5, 1fr); gap: 24px; }
+.footer-cols h5 { font-size: 11px; margin-bottom: 12px; letter-spacing: 0.5px; }
+.footer-cols a { display: block; font-size: 10px; margin-bottom: 14px; color: #e6eef5; }
+.footer-cols a:hover { color: #ffb48a; }
+.contact-text { font-size: 10px; line-height: 1.6; }
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  font-size: 9px;
+  margin-top: 30px;
+  color: #cfdbe6;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 1000px) {
+  .work-grid { gap: 40px; padding: 0; }
+  .footer-cols { grid-template-columns: repeat(2, 1fr); }
+  .shop-banner { margin-left: 0; margin-right: 0; }
+  .contact-strip, .site-header, .announce-bar { padding-left: 20px; padding-right: 20px; }
+  .breadcrumb, .programme-nav { padding-left: 18px; padding-right: 18px; }
+}
+@media (max-width: 640px) {
+  main, .site-footer { padding-left: 16px; padding-right: 16px; }
+  .work-grid { grid-template-columns: 1fr; gap: 28px; }
+  .cat-title { font-size: 24px; }
+  .shop-banner { aspect-ratio: 1.5 / 1; }
+  .shop-caption { left: 16px; }
+  .footer-cols { grid-template-columns: 1fr; }
+}

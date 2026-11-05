@@ -1,0 +1,258 @@
+/* ===== Program Structure page (self-contained) ===== */
+:root {
+  --navy: #0d3b66;
+  --navy-dark: #0b3a5c;
+  --orange: #e85d1f;
+  --text: #222;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: "Source Sans Pro", Arial, sans-serif;
+  color: var(--text);
+  background: #fff;
+  line-height: 1.5;
+}
+
+a { text-decoration: none; color: inherit; }
+img { max-width: 100%; display: block; }
+
+/* ---------- Contact strip ---------- */
+.contact-strip {
+  background: var(--navy);
+  color: #fff;
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 8px 40px;
+  flex-wrap: wrap;
+}
+.strip-left span { margin-right: 20px; }
+
+/* ---------- Header ---------- */
+.site-header {
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 40px;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.logo { height: 56px; width: auto; }
+.main-menu { display: flex; align-items: center; gap: 22px; font-size: 13px; flex-wrap: wrap; }
+.main-menu a:hover { color: var(--orange); }
+.main-menu .enquire { background: var(--navy); color: #fff; padding: 8px 18px; border-radius: 4px; }
+.main-menu .enquire:hover { color: #fff; background: var(--orange); }
+
+/* ---------- Announcement bar ---------- */
+.announce-bar {
+  background: var(--navy);
+  color: #fff;
+  font-size: 12px;
+  padding: 10px 40px;
+  display: flex;
+  gap: 40px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+/* ---------- Breadcrumb ---------- */
+.breadcrumb { padding: 18px 40px 6px; font-weight: 600; font-size: 15px; color: var(--orange); }
+.breadcrumb span { margin: 0 6px; }
+
+/* ---------- Programme nav ---------- */
+.programme-nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 40px 14px;
+  font-size: 13.5px;
+  overflow-x: auto;
+  gap: 24px;
+}
+.programme-nav a { padding: 10px 6px; white-space: nowrap; border-bottom: 2px solid transparent; }
+.programme-nav a:hover { color: var(--orange); }
+.programme-nav a.active { border-bottom-color: var(--orange); font-weight: 700; }
+
+/* ---------- Hero ---------- */
+.hero {
+  min-height: 460px;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+    url("../Images%20and%20assets/prgram%20structure%20hero.png") center / cover no-repeat;
+  display: flex;
+  align-items: center;
+  padding: 60px 40px 60px 8%;
+}
+.hero-text { max-width: 800px; color: #fff; }
+.hero-text h1 { font-size: 52px; font-weight: 700; margin-bottom: 18px; line-height: 1.1; }
+.hero-text p { font-size: 18px; line-height: 1.5; }
+
+/* ---------- Intro ---------- */
+main { max-width: 1400px; margin: 0 auto; padding: 0 40px 100px; }
+
+.intro {
+  border-left: 8px solid #f7941d;
+  margin: 70px 0 70px 4%;
+  padding: 10px 0 10px 28px;
+  max-width: 900px;
+  font-size: 17px;
+}
+
+/* ---------- Semester tabs ---------- */
+.structure { padding: 0 4%; }
+
+.sem-tabs {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  align-items: end;
+  gap: 4px;
+  overflow-x: auto;
+  min-width: 0;
+}
+.sem-label {
+  text-align: center;
+  font-size: 14px;
+  color: var(--navy-dark);
+  padding: 12px 6px;
+}
+.sem-tab {
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  font-family: inherit;
+  font-size: 14px;
+  color: var(--navy-dark);
+  padding: 12px 6px;
+  cursor: pointer;
+  white-space: nowrap;
+  min-width: 96px;
+}
+.sem-tab:hover:not(.disabled) { color: var(--orange); }
+.sem-tab.active { font-weight: 700; border-bottom-color: var(--orange); }
+.sem-tab.disabled { cursor: not-allowed; opacity: 0.55; }
+
+/* ---------- Structure card ---------- */
+.structure-card {
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.12);
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 20px;
+  padding: 50px 40px 60px 20px;
+  min-height: 500px;
+}
+.structure-side { font-size: 14px; padding-left: 10px; }
+.structure-side p { margin-bottom: 24px; }
+
+.row { display: grid; grid-template-columns: 170px 1fr; align-items: center; padding: 11px 0; }
+.row.head { font-size: 20px; font-weight: 700; padding-bottom: 8px; }
+.row .col-code { text-align: center; font-size: 18px; }
+.row.head .col-code { text-align: left; }
+.row .col-name { font-size: 20px; padding-right: 20px; }
+.row.head .col-name { font-size: 20px; }
+
+#semRows { animation: fadeIn 0.3s ease; }
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ---------- Footer ---------- */
+.site-footer { background: #0a3a5c; color: #fff; padding: 40px 40px 20px; }
+.footer-inner { max-width: 1200px; margin: 0 auto; }
+.footer-top { border-bottom: 1px solid rgba(255, 255, 255, 0.2); padding-bottom: 14px; margin-bottom: 22px; }
+.footer-logo { height: 48px; width: auto; background: #fff; padding: 4px 8px; border-radius: 4px; }
+.footer-cols { display: grid; grid-template-columns: repeat(5, 1fr); gap: 24px; }
+.footer-cols h5 { font-size: 11px; margin-bottom: 12px; letter-spacing: 0.5px; }
+.footer-cols a { display: block; font-size: 10px; margin-bottom: 14px; color: #e6eef5; }
+.footer-cols a:hover { color: #ffb48a; }
+.contact-text { font-size: 10px; line-height: 1.6; }
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  font-size: 9px;
+  margin-top: 30px;
+  color: #cfdbe6;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 1000px) {
+  .sem-tabs { display: flex; }
+  .structure-card { grid-template-columns: 1fr; padding: 30px 20px; }
+  .footer-cols { grid-template-columns: repeat(2, 1fr); }
+  .hero-text h1 { font-size: 40px; }
+}
+@media (max-width: 640px) {
+  .contact-strip, .site-header, .announce-bar, .breadcrumb, .programme-nav, main, .site-footer { padding-left: 16px; padding-right: 16px; }
+  .hero { padding: 40px 16px; min-height: 360px; }
+  .hero-text h1 { font-size: 32px; }
+  .hero-text p { font-size: 15px; }
+  .structure { padding: 0; }
+  .intro { margin-left: 0; font-size: 15px; }
+  .row { grid-template-columns: 90px 1fr; }
+  .row .col-name, .row.head, .row.head .col-name { font-size: 15px; }
+  .row .col-code { font-size: 15px; }
+  .footer-cols { grid-template-columns: 1fr; }
+}
+/* ===== Same menu as Student Works / Admission Process ===== */
+.contact-strip,
+.site-header,
+.announce-bar {
+  padding-left: 60px;
+  padding-right: 60px;
+}
+.contact-strip { padding-top: 10px; padding-bottom: 10px; }
+
+.breadcrumb {
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 22px 30px 10px;
+  font-size: 17px;
+  font-weight: 600;
+  color: #f26a2e;
+  background: #fff;
+}
+.breadcrumb span { color: #888; margin: 0 6px; }
+
+.programme-nav {
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 14px 30px 24px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  overflow-x: visible;
+  background: #fff;
+}
+.programme-nav a {
+  font-size: 15px;
+  padding: 4px 10px 6px;
+  color: #222;
+  border-bottom: 2px solid transparent;
+}
+.programme-nav a:hover { color: #f26a2e; }
+.programme-nav a.active {
+  font-weight: 700;
+  border-bottom-color: #f26a2e;
+}
+
+@media (max-width: 900px) {
+  .contact-strip,
+  .site-header,
+  .announce-bar {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .breadcrumb,
+  .programme-nav {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+}

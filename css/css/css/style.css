@@ -1,0 +1,4455 @@
+
+/* =================================
+   SOURCE SANS PRO FONT FAMILY
+================================= */
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('../site-assets/Fonts/SourceSansPro-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('../site-assets/Fonts/SourceSansPro-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('../site-assets/Fonts/SourceSansPro-Semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('../site-assets/Fonts/SourceSansPro-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* =================================
+   GLOBAL WEBSITE SETTINGS
+================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    color: #222222;
+    background-color: #ffffff;
+    line-height: 1.5;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    font-family: inherit;
+    cursor: pointer;
+}
+
+
+/* =========================================
+   SPECIALISATIONS PAGE
+========================================= */
+
+/* TOP BAR */
+
+.top-bar {
+    min-height: 27px;
+    background: #173d57;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 7%;
+    font-size: 9px;
+    gap: 15px;
+}
+
+.top-left,
+.top-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.top-right a {
+    white-space: nowrap;
+}
+
+.top-bar input {
+    width: 65px;
+    height: 17px;
+    border: none;
+    padding: 2px 4px;
+    font-size: 9px;
+}
+
+/* MAIN HEADER */
+
+.main-header {
+    min-height: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 7%;
+    background: #fff;
+    gap: 20px;
+}
+
+.university-logo img {
+    width: 180px;
+    height: auto;
+}
+
+.main-navigation {
+    display: flex;
+    align-items: center;
+    gap: 17px;
+    font-size: 11px;
+    white-space: nowrap;
+}
+
+.enquire-button {
+    background: #173d57;
+    color: white;
+    padding: 9px 14px;
+    border-radius: 3px;
+}
+
+/* ANNOUNCEMENTS */
+
+.announcement-bar {
+    min-height: 25px;
+    background: #173d57;
+    color: white;
+    padding: 6px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 10px;
+}
+
+/* BREADCRUMB */
+
+.breadcrumb {
+    padding: 16px 8% 8px;
+    display: flex;
+    gap: 7px;
+    align-items: center;
+    color: #f04b16;
+    font-size: 12px;
+}
+
+.breadcrumb a {
+    color: #f04b16;
+}
+
+.breadcrumb strong {
+    font-weight: 600;
+}
+
+/* PROGRAM NAVIGATION */
+
+.program-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 8% 16px;
+    gap: 20px;
+    font-size: 12px;
+    background: white;
+}
+
+.program-navigation a {
+    padding: 7px 0;
+    white-space: nowrap;
+}
+
+.program-navigation .active {
+    border-bottom: 1px solid #f04b16;
+}
+
+/* MAIN PAGE CONTENT */
+
+.specialisations-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 18px 4.5% 110px;
+}
+
+.specialisation-section {
+    display: grid;
+    grid-template-columns: 62% 38%;
+    gap: 25px;
+    align-items: start;
+    margin-bottom: 65px;
+}
+
+.specialisation-content {
+    padding-top: 0;
+}
+
+.specialisation-content h1 {
+    font-size: 34px;
+    font-weight: 400;
+    line-height: 1.25;
+    border-left: 4px solid #f4511e;
+    padding-left: 16px;
+    margin-bottom: 12px;
+}
+
+.specialisation-tagline {
+    font-size: 14px;
+    margin: 0 0 18px 16px;
+}
+
+.specialisation-description {
+    font-size: 13px;
+    line-height: 1.55;
+    margin-left: 16px;
+    max-width: 620px;
+    margin-bottom: 30px;
+}
+
+.career-intro {
+    font-size: 12px;
+    margin: 0 0 20px 16px;
+    color: #777;
+}
+
+.career-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 22px 16px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 25px;
+    row-gap: 15px;
+    font-size: 13px;
+    color: #666;
+}
+
+.career-list li::before {
+    content: "•";
+    margin-right: 10px;
+}
+
+/* RECOMMENDED BUTTON */
+
+.recommended-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    margin-left: 16px;
+    background: #f4510b;
+    color: white;
+    padding: 12px 15px;
+    border-radius: 5px;
+    font-size: 12px;
+    transition: background 0.2s ease;
+}
+
+.recommended-button:hover {
+    background: #d93e00;
+}
+
+/* SPECIALISATION IMAGE */
+
+.specialisation-image {
+    position: relative;
+    width: 100%;
+    height: 205px;
+    margin-top: 55px;
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+.specialisation-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.image-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 12px;
+    color: white;
+    background: linear-gradient(transparent, rgba(0,0,0,0.8));
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+}
+
+.image-caption strong {
+    font-size: 13px;
+}
+
+/* FOOTER */
+
+.university-footer {
+    background: #083c53;
+    color: white;
+    font-size: 11px;
+}
+
+.footer-container {
+    max-width: 1300px;
+    margin: auto;
+    padding: 25px 5% 35px;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+.footer-top img {
+    width: 165px;
+    height: auto;
+}
+
+.social-links {
+    display: flex;
+    gap: 3px;
+}
+
+.social-links a {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #315c9c;
+    color: white;
+    font-weight: bold;
+}
+
+.social-links a:nth-child(2) {
+    background: #111;
+}
+
+.social-links a:nth-child(3) {
+    background: #e51c35;
+}
+
+.social-links a:nth-child(4) {
+    background: #0875a9;
+}
+
+.social-links a:nth-child(5) {
+    background: #c32c81;
+}
+
+.footer-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1.2fr 1.2fr 1.6fr;
+    gap: 25px;
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-column h3 {
+    font-size: 12px;
+    margin-bottom: 3px;
+}
+
+.footer-column a,
+.footer-column p {
+    color: #d2e0e8;
+    font-size: 10px;
+    line-height: 1.6;
+}
+
+.contact-column iframe {
+    width: 100%;
+    height: 150px;
+    border: 0;
+    margin-top: 5px;
+}
+
+.footer-bottom {
+    background: #06354a;
+    padding: 15px 7%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 9px;
+    color: #d2e0e8;
+}
+
+/* =========================================
+   END OF SPECIALISATIONS PAGE
+========================================= */
+
+
+
+/* ==========================================
+   PRODUCT DESIGN PAGE
+========================================== */
+
+.product-page {
+    width: 100%;
+    background: #ffffff;
+    overflow: hidden;
+}
+
+/* HERO SECTION */
+
+.product-hero {
+    display: grid;
+    grid-template-columns: 45% 55%;
+    align-items: center;
+    min-height: 390px;
+    gap: 0;
+}
+
+.product-hero-content {
+    padding: 35px 9% 35px 10%;
+}
+
+.product-hero-content h1 {
+    font-size: 34px;
+    font-weight: 400;
+    line-height: 1.2;
+    border-left: 4px solid #f4511e;
+    padding-left: 14px;
+    margin-bottom: 12px;
+}
+
+.product-tagline {
+    font-size: 13px;
+    line-height: 1.6;
+    max-width: 450px;
+    margin-bottom: 28px;
+}
+
+.product-details {
+    display: flex;
+    gap: 38px;
+    margin-left: 15px;
+}
+
+.product-details div {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.product-details span {
+    font-size: 9px;
+    color: #888;
+}
+
+.product-details strong {
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.product-hero-image {
+    width: 100%;
+    height: 390px;
+    overflow: hidden;
+}
+
+.product-hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* SECTION HEADINGS */
+
+.product-modules {
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 65px 35px 0;
+}
+
+.section-heading {
+    border-left: 4px solid #f4511e;
+    padding-left: 14px;
+    margin-bottom: 42px;
+}
+
+.section-heading h2 {
+    font-size: 27px;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+.section-heading p {
+    font-size: 11px;
+    color: #777;
+}
+
+/* MODULE CARDS */
+
+.module-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.module-card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 20px 20px 18px;
+    min-height: 212px;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.09);
+    display: flex;
+    flex-direction: column;
+}
+
+.module-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    margin-bottom: 13px;
+}
+
+.module-icon.orange { background: #ff9d00; }
+.module-icon.blue { background: #3285ff; }
+.module-icon.green { background: #00c85a; }
+.module-icon.purple { background: #a83eff; }
+.module-icon.pink { background: #f52b91; }
+.module-icon.violet { background: #6556ff; }
+
+.module-card h3 {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.module-card > p {
+    font-size: 10px;
+    color: #777;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.module-topics {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-top: auto;
+}
+
+.module-topics span {
+    background: #f2f3f5;
+    color: #555;
+    padding: 4px 8px;
+    border-radius: 15px;
+    font-size: 8px;
+}
+
+/* GRADUATION PROJECT */
+
+.graduation-project {
+    max-width: 1070px;
+    margin: 35px auto 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: stretch;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.09);
+}
+
+.graduation-content {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.graduation-content h2 {
+    font-size: 19px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.graduation-content p {
+    font-size: 11px;
+    line-height: 1.6;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.graduation-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.graduation-content li {
+    font-size: 11px;
+    margin-bottom: 10px;
+}
+
+.graduation-content li::before {
+    content: "✓";
+    color: #00c86b;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.graduation-images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 190px;
+}
+
+.graduation-images img {
+    width: 100%;
+    height: 100%;
+    min-height: 190px;
+    object-fit: cover;
+}
+
+/* A GLIMPSE */
+
+.product-glimpse {
+    max-width: 1070px;
+    margin: 35px auto 100px;
+    padding: 0 0;
+}
+
+.product-glimpse .section-heading {
+    margin-bottom: 30px;
+}
+
+.glimpse-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 35px;
+    padding: 0 15px;
+}
+
+.glimpse-grid img {
+    width: 100%;
+    height: 225px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+/* FOOTER SPACING */
+
+.product-page + .university-footer {
+    margin-top: 0;
+}
+
+
+/* ==========================================
+   PRODUCT PAGE — FULL LAPTOP WIDTH
+========================================== */
+
+/* Core Modules */
+.product-modules {
+    width: 100%;
+    max-width: none;
+    padding: 65px 6% 0;
+    margin: 0 auto;
+}
+
+.module-grid {
+    width: 100%;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.module-card {
+    width: 100%;
+    min-width: 0;
+}
+
+/* Graduation Project */
+.graduation-project {
+    width: 88%;
+    max-width: none;
+    margin: 40px auto 0;
+}
+
+/* A Glimpse */
+.product-glimpse {
+    width: 88%;
+    max-width: none;
+    margin: 40px auto 100px;
+}
+
+/* Keep images properly proportioned */
+.glimpse-grid img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+}
+
+/* Graduation images */
+.graduation-images img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* ==========================================
+   GRAPHIC DESIGN PAGE
+========================================== */
+
+.graphic-page {
+    width: 100%;
+    background: #ffffff;
+    overflow: hidden;
+}
+
+/* HERO */
+
+.graphic-hero {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 45% 55%;
+    align-items: center;
+    min-height: 325px;
+}
+
+.graphic-hero-content {
+    padding: 35px 7% 35px 10%;
+}
+
+.graphic-hero-content h1 {
+    font-size: 34px;
+    font-weight: 400;
+    line-height: 1.2;
+    border-left: 4px solid #f4511e;
+    padding-left: 15px;
+    margin-bottom: 12px;
+}
+
+.graphic-hero-description {
+    font-size: 13px;
+    line-height: 1.55;
+    margin-left: 15px;
+    max-width: 460px;
+}
+
+.graphic-course-details {
+    display: flex;
+    gap: 35px;
+    margin: 24px 0 0 30px;
+}
+
+.graphic-course-details div {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.graphic-course-details span {
+    font-size: 10px;
+    color: #777777;
+}
+
+.graphic-course-details strong {
+    font-size: 11px;
+    font-weight: 600;
+}
+
+/* HERO IMAGE */
+
+.graphic-hero-image {
+    width: 100%;
+    height: 325px;
+    overflow: hidden;
+}
+
+.graphic-hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* SECTION HEADINGS */
+
+.graphic-section-heading {
+    border-left: 4px solid #f4511e;
+    padding-left: 14px;
+    margin-bottom: 35px;
+}
+
+.graphic-section-heading h2 {
+    font-size: 27px;
+    font-weight: 400;
+    line-height: 1.3;
+    margin-bottom: 5px;
+}
+
+.graphic-section-heading p {
+    font-size: 11px;
+    color: #777777;
+}
+
+/* CORE MODULES */
+
+.graphic-modules {
+    width: 88%;
+    margin: 0 auto;
+    padding-top: 55px;
+}
+
+.graphic-module-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.graphic-module-card {
+    min-width: 0;
+    min-height: 225px;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 11px;
+    box-shadow: 0 3px 14px rgba(0, 0, 0, 0.09);
+    display: flex;
+    flex-direction: column;
+}
+
+.graphic-module-card .module-icon {
+    width: 38px;
+    height: 38px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 13px;
+    font-size: 18px;
+}
+
+.graphic-module-card .module-icon.orange {
+    background: #ff9900;
+}
+
+.graphic-module-card .module-icon.blue {
+    background: #3285ff;
+}
+
+.graphic-module-card .module-icon.green {
+    background: #00c65e;
+}
+
+.graphic-module-card .module-icon.purple {
+    background: #ae3cff;
+}
+
+.graphic-module-card .module-icon.pink {
+    background: #f42d92;
+}
+
+.graphic-module-card .module-icon.violet {
+    background: #6555ff;
+}
+
+.graphic-module-card h3 {
+    font-size: 16px;
+    line-height: 1.3;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.graphic-module-card > p {
+    color: #777777;
+    font-size: 10px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.graphic-topics {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-top: auto;
+}
+
+.graphic-topics small {
+    width: 100%;
+    color: #888888;
+    font-size: 9px;
+    margin-bottom: 3px;
+}
+
+.graphic-topics span {
+    font-size: 8px;
+    color: #555555;
+    background: #f1f2f4;
+    padding: 4px 9px;
+    border-radius: 20px;
+}
+
+/* GRADUATION PROJECT */
+
+.graphic-graduation {
+    width: 88%;
+    min-height: 230px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 40px auto 0;
+    overflow: hidden;
+    border-radius: 11px;
+    background: #ffffff;
+    box-shadow: 0 3px 14px rgba(0, 0, 0, 0.08);
+}
+
+.graphic-graduation-content {
+    padding: 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.graphic-graduation-content h2 {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 9px;
+}
+
+.graphic-graduation-content p {
+    font-size: 11px;
+    line-height: 1.55;
+    color: #777777;
+    margin-bottom: 18px;
+}
+
+.graphic-graduation-content ul {
+    padding: 0;
+    list-style: none;
+}
+
+.graphic-graduation-content li {
+    font-size: 11px;
+    margin-bottom: 11px;
+}
+
+.graphic-graduation-content li::before {
+    content: "✓";
+    color: #00bd69;
+    font-weight: bold;
+    margin-right: 11px;
+}
+
+.graphic-graduation-image {
+    min-height: 230px;
+    width: 100%;
+}
+
+.graphic-graduation-image img {
+    width: 100%;
+    height: 100%;
+    min-height: 230px;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* A GLIMPSE */
+
+.graphic-glimpse {
+    width: 88%;
+    margin: 35px auto 100px;
+}
+
+.graphic-glimpse .graphic-section-heading {
+    margin-bottom: 30px;
+}
+
+.graphic-glimpse-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 35px;
+    padding: 0 15px;
+}
+
+.graphic-glimpse-grid img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+
+/* RESPONSIVE GRAPHIC DESIGN PAGE */
+
+@media (max-width: 900px) {
+
+    .graphic-hero {
+        grid-template-columns: 45% 55%;
+    }
+
+    .graphic-modules {
+        width: 92%;
+    }
+
+    .graphic-module-grid {
+        gap: 14px;
+    }
+
+    .graphic-module-card {
+        padding: 16px;
+    }
+
+    .graphic-graduation,
+    .graphic-glimpse {
+        width: 92%;
+    }
+}
+
+@media (max-width: 650px) {
+
+    .graphic-hero {
+        grid-template-columns: 1fr;
+    }
+
+    .graphic-hero-content {
+        padding: 35px 6%;
+    }
+
+    .graphic-hero-image {
+        height: 250px;
+    }
+
+    .graphic-course-details {
+        gap: 25px;
+    }
+
+    .graphic-modules {
+        width: 90%;
+        padding-top: 40px;
+    }
+
+    .graphic-module-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .graphic-graduation {
+        grid-template-columns: 1fr;
+    }
+
+    .graphic-graduation-image {
+        height: 220px;
+    }
+
+    .graphic-glimpse {
+        width: 90%;
+    }
+
+    .graphic-glimpse-grid {
+        gap: 15px;
+        padding: 0;
+    }
+
+    .graphic-glimpse-grid img {
+        height: 180px;
+    }
+}
+
+@media (max-width: 420px) {
+
+    .graphic-module-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .graphic-section-heading h2 {
+        font-size: 23px;
+    }
+
+    .graphic-glimpse-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .graphic-glimpse-grid img {
+        height: 220px;
+    }
+}
+/* ACTIVE SPECIALISATIONS NAVIGATION */
+
+.program-navigation a.active {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700 !important;
+    color: #222222 !important;
+    border-bottom: 2px solid #f4511e !important;
+    padding-bottom: 7px;
+    display: inline-block;
+}
+
+
+/* ==========================================
+   UI/UX DESIGN PAGE - DEDICATED STYLES
+========================================== */
+
+.ux-design-page {
+    width: 100%;
+    background: #ffffff;
+    overflow: hidden;
+}
+
+
+/* HERO SECTION */
+
+.ux-hero {
+    width: 100%;
+    min-height: 326px;
+    display: grid;
+    grid-template-columns: 47% 53%;
+    align-items: center;
+    margin: 0;
+    gap: 0;
+}
+
+.ux-hero-content {
+    padding: 30px 7% 30px 10%;
+}
+
+.ux-hero-content h1 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 34px;
+    font-weight: 400;
+    line-height: 1.2;
+    color: #171717;
+    border-left: 4px solid #f4511e;
+    padding-left: 14px;
+    margin: 0 0 14px;
+}
+
+.ux-hero-description {
+    font-size: 13px;
+    line-height: 1.55;
+    color: #292929;
+    margin: 0 0 24px 14px;
+    max-width: 440px;
+}
+
+.ux-course-details {
+    display: flex;
+    align-items: flex-start;
+    gap: 34px;
+    margin-left: 28px;
+}
+
+.ux-detail {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.ux-detail span {
+    font-size: 9px;
+    color: #777777;
+}
+
+.ux-detail strong {
+    font-size: 11px;
+    font-weight: 600;
+    color: #222222;
+}
+
+
+/* HERO IMAGE - NO SHADOW OR OVERLAY */
+
+.ux-hero-image {
+    width: 100%;
+    height: 326px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+    background: transparent;
+    box-shadow: none !important;
+    filter: none !important;
+    border: none !important;
+    border-radius: 0 !important;
+}
+
+.ux-hero-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    object-fit: cover;
+    object-position: center;
+    box-shadow: none !important;
+    filter: none !important;
+    border: none !important;
+    border-radius: 0 !important;
+    opacity: 1;
+}
+
+.ux-hero-image::before,
+.ux-hero-image::after {
+    content: none !important;
+    display: none !important;
+}
+
+
+/* CORE MODULES SECTION */
+
+.ux-modules {
+    width: 80%;
+    max-width: 1150px;
+    margin: 48px auto 0;
+    padding: 0;
+}
+
+.ux-section-heading {
+    border-left: 4px solid #f4511e;
+    padding-left: 13px;
+    margin-bottom: 40px;
+}
+
+.ux-section-heading h2 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 27px;
+    line-height: 1.3;
+    font-weight: 400;
+    color: #222222;
+    margin: 0 0 5px;
+}
+
+.ux-section-heading p {
+    font-size: 11px;
+    line-height: 1.5;
+    color: #777777;
+    margin: 0;
+}
+
+
+/* SIX MODULE CARDS */
+
+.ux-module-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+    width: 100%;
+}
+
+.ux-module-card {
+    min-width: 0;
+    min-height: 212px;
+    padding: 18px 17px 16px;
+    display: flex;
+    flex-direction: column;
+    background: #ffffff;
+    border: none;
+    border-radius: 11px;
+    box-shadow: 0 3px 13px rgba(0, 0, 0, 0.09);
+}
+
+.ux-icon {
+    width: 33px;
+    height: 33px;
+    flex: 0 0 33px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 9px;
+    font-size: 17px;
+    margin-bottom: 12px;
+}
+
+.ux-orange {
+    background: #ff9900;
+}
+
+.ux-blue {
+    background: #3285ff;
+}
+
+.ux-green {
+    background: #00c65e;
+}
+
+.ux-purple {
+    background: #ae3cff;
+}
+
+.ux-pink {
+    background: #f42d92;
+}
+
+.ux-violet {
+    background: #6555ff;
+}
+
+.ux-module-card h3 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.3;
+    color: #222222;
+    margin: 0 0 7px;
+}
+
+.ux-module-card > p {
+    font-size: 9px;
+    line-height: 1.45;
+    color: #777777;
+    margin: 0 0 13px;
+}
+
+.ux-topics {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 4px;
+    margin-top: auto;
+}
+
+.ux-topics small {
+    display: block;
+    width: 100%;
+    font-size: 8px;
+    color: #888888;
+    margin-bottom: 2px;
+}
+
+.ux-topics span {
+    display: inline-block;
+    font-size: 7px;
+    color: #555555;
+    background: #f1f2f4;
+    padding: 4px 7px;
+    border-radius: 15px;
+    line-height: 1.2;
+}
+
+
+/* GRADUATION PROJECT */
+
+.ux-graduation {
+    width: 80%;
+    max-width: 1150px;
+    min-height: 198px;
+    margin: 30px auto 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: stretch;
+    background: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 13px rgba(0, 0, 0, 0.08);
+}
+
+.ux-graduation-content {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.ux-graduation-content h2 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 19px;
+    font-weight: 400;
+    color: #222222;
+    margin: 0 0 9px;
+}
+
+.ux-graduation-content p {
+    font-size: 10px;
+    line-height: 1.5;
+    color: #777777;
+    margin: 0 0 17px;
+}
+
+.ux-graduation-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.ux-graduation-content li {
+    font-size: 10px;
+    line-height: 1.6;
+    margin-bottom: 7px;
+    color: #333333;
+}
+
+.ux-graduation-content li::before {
+    content: "✓";
+    color: #00c875;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.ux-graduation-image {
+    width: 100%;
+    min-width: 0;
+    min-height: 198px;
+    overflow: hidden;
+}
+
+.ux-graduation-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-height: 198px;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+/* A GLIMPSE */
+
+.ux-glimpse {
+    width: 80%;
+    max-width: 1150px;
+    margin: 32px auto 100px;
+}
+
+.ux-glimpse .ux-section-heading {
+    margin-bottom: 22px;
+}
+
+.ux-glimpse-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 44px;
+    padding: 0 10px;
+}
+
+.ux-glimpse-grid img {
+    display: block;
+    width: 100%;
+    height: 225px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 5px;
+}
+
+
+/* ACTIVE PROGRAMME NAVIGATION */
+
+.program-navigation a.active {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700 !important;
+    color: #222222 !important;
+    border-bottom: 2px solid #f4511e !important;
+    padding-bottom: 7px;
+    display: inline-block;
+}
+
+
+/* ==========================================
+   UI/UX PAGE - TABLET
+========================================== */
+
+@media (max-width: 900px) {
+
+    .ux-hero {
+        grid-template-columns: 46% 54%;
+    }
+
+    .ux-hero-content {
+        padding-left: 7%;
+        padding-right: 5%;
+    }
+
+    .ux-modules,
+    .ux-graduation,
+    .ux-glimpse {
+        width: 88%;
+    }
+
+    .ux-module-grid {
+        gap: 12px;
+    }
+
+    .ux-module-card {
+        padding: 15px;
+    }
+}
+
+
+/* ==========================================
+   UI/UX PAGE - MOBILE
+========================================== */
+
+@media (max-width: 650px) {
+
+    .ux-hero {
+        grid-template-columns: 1fr;
+    }
+
+    .ux-hero-content {
+        padding: 30px 6%;
+    }
+
+    .ux-hero-image {
+        height: 240px;
+    }
+
+    .ux-modules {
+        width: 90%;
+        margin-top: 38px;
+    }
+
+    .ux-module-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .ux-graduation {
+        width: 90%;
+        grid-template-columns: 1fr;
+    }
+
+    .ux-graduation-image {
+        min-height: 210px;
+    }
+
+    .ux-graduation-image img {
+        min-height: 210px;
+    }
+
+    .ux-glimpse {
+        width: 90%;
+    }
+
+    .ux-glimpse-grid {
+        gap: 15px;
+        padding: 0;
+    }
+
+    .ux-glimpse-grid img {
+        height: 180px;
+    }
+}
+
+@media (max-width: 420px) {
+
+    .ux-module-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .ux-glimpse-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .ux-glimpse-grid img {
+        height: 220px;
+    }
+
+    .ux-course-details {
+        gap: 23px;
+    }
+}
+
+
+/* ==========================================
+   SPECIALISATION PAGE TITLE LINKS
+========================================== */
+
+.specialisation-title-link {
+    color: inherit !important;
+    text-decoration: none !important;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: inherit;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.specialisation-title-link:hover {
+    color: inherit !important;
+    text-decoration: none !important;
+}
+
+.specialisation-title-link:focus-visible {
+    outline: 2px solid #f4511e;
+    outline-offset: 5px;
+}
+
+/* ACTIVE PROGRAMME NAVIGATION */
+
+.program-navigation a.active {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700 !important;
+    color: #222222 !important;
+    border-bottom: 2px solid #f4511e !important;
+    padding-bottom: 7px;
+    display: inline-block;
+}
+
+
+/* ==========================================
+   PROGRAM STRUCTURE PAGE
+========================================== */
+
+.program-structure-page {
+    width: 100%;
+    background: #ffffff;
+    padding-bottom: 100px;
+}
+
+/* HERO IMAGE SECTION */
+
+.program-hero {
+    width: 100%;
+    height: 360px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 0 5%;
+    background-image:
+        linear-gradient(
+            90deg,
+            rgba(0, 0, 0, 0.68),
+            rgba(0, 0, 0, 0.38)
+        ),
+        url("../Images%20and%20assets/Component%2012-2.png");
+    background-size: cover;
+    background-position: center 48%;
+    background-repeat: no-repeat;
+}
+
+.program-hero-content {
+    width: 620px;
+    max-width: 90%;
+    color: #ffffff;
+    margin-left: 10px;
+}
+
+.program-hero-content h1 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 1.2;
+    color: #ffffff;
+    margin-bottom: 12px;
+}
+
+.program-hero-content p {
+    font-size: 13px;
+    line-height: 1.55;
+    color: #ffffff;
+    max-width: 560px;
+    margin: 0;
+}
+
+
+/* INTRODUCTION CALLOUT */
+
+.program-introduction {
+    width: 86%;
+    margin: 38px auto 26px;
+    padding: 13px 18px;
+    border-left: 5px solid #f58218;
+    min-height: 58px;
+    display: flex;
+    align-items: center;
+}
+
+.program-introduction p {
+    font-size: 13px;
+    line-height: 1.55;
+    color: #292929;
+    margin: 0;
+}
+
+
+/* SEMESTER SECTION */
+
+.semester-section {
+    width: 86%;
+    margin: 0 auto;
+}
+
+
+/* SEMESTER TABS */
+
+.semester-tabs {
+    width: 100%;
+    min-height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+    padding: 0 10px;
+    background: #ffffff;
+}
+
+.semester-tab {
+    position: relative;
+    flex: 1;
+    min-width: 0;
+    height: 48px;
+    padding: 0 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 11px;
+    font-weight: 400;
+    color: #25445e;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid transparent;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.semester-tab:hover:not(:disabled) {
+    color: #e85b20;
+}
+
+.semester-tab.active {
+    color: #173d57;
+    font-weight: 700;
+    border-bottom: 2px solid #f4511e;
+}
+
+.semester-tab:disabled {
+    opacity: 1;
+    cursor: default;
+}
+
+
+/* SEMESTER CONTENT CARD */
+
+.semester-content-card {
+    width: 100%;
+    min-height: 315px;
+    display: grid;
+    grid-template-columns: 16% 84%;
+    background: #ffffff;
+    border-radius: 0 0 9px 9px;
+    box-shadow: 0 5px 17px rgba(0, 0, 0, 0.09);
+    padding: 24px 12px 30px;
+}
+
+
+/* ELIGIBILITY AND DURATION */
+
+.program-facts {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 4px 8px;
+}
+
+.fact-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 11px;
+    line-height: 1.5;
+    color: #333333;
+}
+
+
+/* TABLE WRAPPER */
+
+.semester-table-wrapper {
+    width: 100%;
+    min-width: 0;
+    overflow-x: auto;
+}
+
+.semester-table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.semester-table th {
+    text-align: left;
+    font-size: 13px;
+    font-weight: 700;
+    color: #202020;
+    padding: 5px 10px 8px;
+}
+
+.semester-table th:first-child,
+.semester-table td:first-child {
+    width: 24%;
+    text-align: center;
+}
+
+.semester-table th:last-child,
+.semester-table td:last-child {
+    width: 76%;
+    text-align: left;
+}
+
+.semester-table td {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #252525;
+    padding: 8px 10px;
+    height: 43px;
+    vertical-align: middle;
+}
+
+.semester-table tbody tr {
+    transition: background 0.15s ease;
+}
+
+.semester-table tbody tr:hover {
+    background: #fafafa;
+}
+
+
+/* ==========================================
+   TABLET RESPONSIVENESS
+========================================== */
+
+@media (max-width: 900px) {
+
+    .program-hero {
+        height: 310px;
+    }
+
+    .program-introduction,
+    .semester-section {
+        width: 92%;
+    }
+
+    .semester-content-card {
+        grid-template-columns: 18% 82%;
+    }
+
+    .semester-tab {
+        font-size: 10px;
+    }
+
+    .semester-table td {
+        font-size: 11px;
+    }
+}
+
+
+/* ==========================================
+   MOBILE RESPONSIVENESS
+========================================== */
+
+@media (max-width: 650px) {
+
+    .program-hero {
+        height: 280px;
+        padding: 0 6%;
+        background-position: center;
+    }
+
+    .program-hero-content h1 {
+        font-size: 26px;
+    }
+
+    .program-hero-content p {
+        font-size: 12px;
+    }
+
+    .program-introduction {
+        width: 90%;
+        margin-top: 25px;
+    }
+
+    .program-introduction p {
+        font-size: 11px;
+    }
+
+    .semester-section {
+        width: 94%;
+    }
+
+    .semester-tabs {
+        justify-content: flex-start;
+        overflow-x: auto;
+        padding: 0;
+        gap: 12px;
+    }
+
+    .semester-tab {
+        flex: 0 0 auto;
+        min-width: 83px;
+        font-size: 10px;
+    }
+
+    .semester-content-card {
+        grid-template-columns: 1fr;
+        padding: 18px 12px;
+        gap: 16px;
+    }
+
+    .program-facts {
+        flex-direction: row;
+        gap: 35px;
+        padding: 5px 8px;
+    }
+
+    .fact-item {
+        font-size: 10px;
+    }
+
+    .semester-table {
+        min-width: 420px;
+    }
+
+    .semester-table th {
+        font-size: 12px;
+    }
+
+    .semester-table td {
+        font-size: 11px;
+    }
+}
+
+background-image:
+    linear-gradient(
+        rgba(0, 0, 0, 0.40),
+        rgba(0, 0, 0, 0.40)
+    ),
+    url("../Images and assets/progam structure.png");
+
+   
+/* ==========================================
+   FIX: RECOMMENDED MINORS - NORMAL SCALE
+========================================== */
+
+/* Keep the normal heading dimensions */
+
+.sp-section.is-minors .sp-minor-view .sp-heading {
+    font-size: 34px !important;
+    font-weight: 400;
+    line-height: 1.25;
+    margin-bottom: 12px;
+}
+
+/* Keep the tagline at its original size */
+
+.sp-section.is-minors .sp-minor-view .sp-tagline {
+    font-size: 13px !important;
+    line-height: 1.5;
+    margin: 0 0 17px 14px;
+}
+
+/* Keep description dimensions consistent */
+
+.sp-section.is-minors .sp-minor-view .sp-description {
+    font-size: 12px !important;
+    line-height: 1.55;
+    margin: 0 0 30px 14px;
+    max-width: 600px;
+}
+
+/* Minor introduction */
+
+.sp-section.is-minors .sp-minor-intro {
+    font-size: 12px !important;
+    line-height: 1.5;
+    color: #777777;
+    margin: 0 0 19px 14px;
+    max-width: 600px;
+}
+
+/* Minor options */
+
+.sp-section.is-minors .sp-minor-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+
+    padding: 0;
+    margin: 0 0 22px 14px;
+
+    font-size: 11px !important;
+    line-height: 1.5;
+    color: #666666;
+}
+
+.sp-section.is-minors .sp-minor-list li {
+    position: relative;
+    padding-left: 11px;
+    margin: 0;
+    font-size: 11px !important;
+    line-height: 1.5;
+}
+
+.sp-section.is-minors .sp-minor-list li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+}
+
+/* Back to major - same dimensions as original CTA */
+
+.sp-section.is-minors .sp-back-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+
+    min-height: 38px;
+    min-width: 0;
+
+    margin-left: 14px;
+    padding: 10px 14px;
+
+    font-size: 11px !important;
+    font-weight: 500;
+    border-radius: 5px;
+}
+
+.sp-section.is-minors .sp-back-button span {
+    font-size: 18px;
+}
+
+/* Keep the minor state clean without an extra image */
+
+.sp-section.is-minors .sp-image {
+    display: none !important;
+}
+
+.sp-section.is-minors .sp-layout {
+    display: block;
+}
+
+.sp-section.is-minors .sp-minor-view {
+    max-width: 850px;
+}
+ 
+/* ==========================================
+   KEEP HERO IMAGE VISIBLE IN MINOR STATE
+========================================== */
+
+/* Preserve the original two-column layout */
+
+.sp-section.is-minors .sp-layout {
+    display: grid !important;
+    grid-template-columns: 62% 38% !important;
+    gap: 25px;
+    align-items: start;
+}
+
+/* Keep the original photograph visible */
+
+.sp-section.is-minors .sp-image {
+    display: block !important;
+    width: 100%;
+    height: 205px;
+    margin-top: 55px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Preserve the image dimensions */
+
+.sp-section.is-minors .sp-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Keep the minor content within its left column */
+
+.sp-section.is-minors .sp-minor-view {
+    max-width: 100%;
+}
+
+/* ==========================================
+   STUDENTS WORK PAGE
+   Vishwakarma University
+========================================== */
+
+.student-works-page {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 26px 4.5% 100px;
+    background: #ffffff;
+    box-sizing: border-box;
+}
+
+
+/* ==========================================
+   CATEGORY SECTIONS
+========================================== */
+
+.sw-category {
+    width: 100%;
+    margin-bottom: 35px;
+}
+
+
+/* CATEGORY HEADING */
+
+.sw-heading {
+    border-left: 4px solid #f4511e;
+    padding-left: 12px;
+    margin-bottom: 15px;
+}
+
+.sw-heading h1,
+.sw-heading h2 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 1.3;
+    color: #222222;
+    margin: 0;
+}
+
+
+/* ==========================================
+   TWO-COLUMN IMAGE GRID
+========================================== */
+
+.sw-image-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 38px;
+    align-items: start;
+}
+
+
+/* ==========================================
+   BLACK AND WHITE / COLOUR IMAGE STATES
+========================================== */
+
+.sw-hover-card {
+    width: 100%;
+    aspect-ratio: 1.5 / 1;
+
+    position: relative;
+    display: block;
+
+    padding: 0;
+    margin: 0;
+
+    overflow: hidden;
+    background: #eeeeee;
+
+    cursor: pointer;
+    outline-offset: 4px;
+}
+
+
+/*
+   IMPORTANT:
+
+   Each original Component PNG contains:
+   LEFT HALF  = BLACK AND WHITE
+   RIGHT HALF = COLOUR
+
+   We display the original image twice.
+   The first copy displays its left half.
+   The second copy displays its right half.
+*/
+
+
+.sw-pair {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: block;
+
+    width: auto !important;
+    height: 100% !important;
+    max-width: none !important;
+
+    object-fit: contain;
+    object-position: left center;
+
+    transition: opacity 0.35s ease;
+}
+
+
+/* DEFAULT STATE - LEFT HALF */
+
+.sw-pair-bw {
+    z-index: 1;
+    transform: translateX(0);
+    opacity: 1;
+}
+
+
+/* COLOUR STATE - RIGHT HALF */
+
+.sw-pair-color {
+    z-index: 2;
+    transform: translateX(-50%);
+    opacity: 0;
+}
+
+
+/* HOVER REVEALS COLOUR */
+
+.sw-hover-card:hover .sw-pair-color,
+.sw-hover-card:focus-visible .sw-pair-color {
+    opacity: 1;
+}
+
+
+/* HOVER HIDES BLACK AND WHITE */
+
+.sw-hover-card:hover .sw-pair-bw,
+.sw-hover-card:focus-visible .sw-pair-bw {
+    opacity: 0;
+}
+
+
+/* ==========================================
+   FULL-WIDTH FEATURE IMAGE
+========================================== */
+
+.sw-feature {
+    width: 94%;
+    max-width: 1100px;
+
+    height: 255px;
+
+    margin: 45px auto 0;
+
+    position: relative;
+    overflow: hidden;
+
+    background: #eeeeee;
+}
+
+.sw-feature > img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: center;
+
+    border: none;
+    box-shadow: none;
+}
+
+.sw-feature::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.55),
+        transparent 38%
+    );
+
+    pointer-events: none;
+}
+
+.sw-feature-caption {
+    position: absolute;
+    z-index: 1;
+
+    bottom: 14px;
+    left: 18px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+
+    color: #ffffff;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 10px;
+}
+
+.sw-feature-caption strong {
+    font-size: 10px;
+    font-weight: 600;
+}
+
+
+/* ==========================================
+   STUDENT WORKS NAVIGATION
+========================================== */
+
+.program-navigation a.active {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700 !important;
+    color: #222222 !important;
+    border-bottom: 2px solid #f4511e !important;
+
+    padding-bottom: 7px;
+    display: inline-block;
+}
+
+
+/* ==========================================
+   TABLET RESPONSIVENESS
+========================================== */
+
+@media (max-width: 900px) {
+
+    .student-works-page {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .sw-image-grid {
+        gap: 22px;
+    }
+
+    .sw-feature {
+        width: 100%;
+        height: 220px;
+    }
+
+}
+
+
+/* ==========================================
+   MOBILE RESPONSIVENESS
+========================================== */
+
+@media (max-width: 600px) {
+
+    .student-works-page {
+        padding: 22px 5% 65px;
+    }
+
+    .sw-category {
+        margin-bottom: 32px;
+    }
+
+    .sw-heading h1,
+    .sw-heading h2 {
+        font-size: 17px;
+    }
+
+    .sw-image-grid {
+        grid-template-columns: 1fr;
+        gap: 17px;
+    }
+
+    .sw-hover-card {
+        aspect-ratio: 1.5 / 1;
+    }
+
+    .sw-feature {
+        width: 100%;
+        height: 200px;
+        margin-top: 35px;
+    }
+
+}
+
+
+/* ==========================================
+   REDUCED MOTION
+========================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .sw-pair {
+        transition: none;
+    }
+
+}
+
+
+/* ==========================================
+   MINOR AND ELECTIVES PAGE
+========================================== */
+
+.me-page {
+    width: 82%;
+    max-width: 1220px;
+    margin: 0 auto;
+    padding: 24px 0 65px;
+    background: #ffffff;
+}
+
+
+/* INTRODUCTION */
+
+.me-intro {
+    margin-bottom: 27px;
+}
+
+.me-intro p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 12px;
+    line-height: 1.55;
+    color: #333333;
+    margin: 0;
+}
+
+
+/* FOUR COURSE TYPE CARDS */
+
+.me-type-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 16px;
+    margin-bottom: 75px;
+}
+
+.me-type-card {
+    min-width: 0;
+    min-height: 175px;
+    padding: 17px 15px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.09);
+}
+
+.me-type-heading {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    margin-bottom: 12px;
+}
+
+.me-type-icon {
+    font-size: 25px;
+    line-height: 1;
+    color: #244966;
+}
+
+.me-type-heading h3 {
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 1.3;
+    color: #222222;
+    margin: 0;
+}
+
+.me-type-card ul {
+    padding-left: 14px;
+    margin: 0;
+}
+
+.me-type-card li {
+    font-size: 9px;
+    line-height: 1.45;
+    color: #777777;
+    margin-bottom: 9px;
+}
+
+
+/* MINOR AND NEP SUBJECTS */
+
+.me-subjects {
+    width: 100%;
+}
+
+.me-main-heading {
+    border-left: 4px solid #f4511e;
+    padding-left: 11px;
+    margin-bottom: 18px;
+}
+
+.me-main-heading h2 {
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 1.3;
+    color: #222222;
+    margin: 0;
+}
+
+.me-category {
+    margin-bottom: 30px;
+}
+
+.me-category-title {
+    display: inline-block;
+    font-size: 10px;
+    font-weight: 500;
+    color: #333333;
+    margin: 0 0 12px;
+    text-decoration: underline;
+    text-decoration-color: #e66a48;
+    text-underline-offset: 4px;
+}
+
+
+/* SUBJECT GRID */
+
+.me-subject-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px 28px;
+    align-items: start;
+}
+
+.me-subject-card {
+    min-width: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background: #ffffff;
+    border-radius: 7px;
+    overflow: hidden;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.09);
+}
+
+
+/* STATIC SUBJECT IMAGES */
+
+.me-subject-photo {
+    display: block;
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+/* SUBJECT INFORMATION */
+
+.me-subject-info {
+    min-height: 118px;
+    padding: 9px 11px 10px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.me-subject-info h4 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    color: #222222;
+    margin: 0 0 4px;
+}
+
+.me-subject-info p {
+    font-size: 9px;
+    line-height: 1.4;
+    color: #777777;
+    margin: 0 0 8px;
+    min-height: 35px;
+}
+
+
+/* SUBJECT TAGS */
+
+.me-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-bottom: 9px;
+}
+
+.me-tags span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #f0f1f3;
+    color: #555555;
+    font-size: 8px;
+    line-height: 1.2;
+    padding: 4px 9px;
+    border-radius: 15px;
+}
+
+
+/* VIEW CURRICULUM */
+
+.me-curriculum-link {
+    align-self: flex-end;
+    margin-top: auto;
+    padding: 2px 0;
+    background: none;
+    border: none;
+    color: #8b4d3b;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 8px;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    cursor: pointer;
+}
+
+.me-curriculum-link:hover {
+    color: #f4511e;
+}
+
+
+/* ==========================================
+   CURRICULUM MODAL OVERLAY
+========================================== */
+
+.me-modal-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 10000;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 24px;
+
+    background: rgba(0, 0, 0, 0.35);
+}
+
+.me-modal-overlay[hidden] {
+    display: none !important;
+}
+
+
+/* MODAL WINDOW */
+
+.me-modal {
+    width: 100%;
+    max-width: 1050px;
+    max-height: 88vh;
+    min-height: 480px;
+
+    display: flex;
+    flex-direction: column;
+
+    background: #ffffff;
+    border-radius: 7px;
+    overflow: hidden;
+
+    box-shadow: 0 12px 38px rgba(0, 0, 0, 0.16);
+    outline: none;
+}
+
+
+/* MODAL HEADER */
+
+.me-modal-header {
+    min-height: 115px;
+    padding: 25px 38px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    border-bottom: 1px solid #e9e9e9;
+}
+
+.me-modal-header h2 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    color: #173d57;
+    margin: 0 0 5px;
+}
+
+.me-modal-header p {
+    font-size: 12px;
+    color: #777777;
+    margin: 0;
+}
+
+
+/* CLOSE BUTTON */
+
+.me-modal-close {
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: transparent;
+    border: none;
+
+    font-family: Arial, sans-serif;
+    font-size: 34px;
+    font-weight: 300;
+    line-height: 1;
+
+    color: #173d57;
+    cursor: pointer;
+}
+
+.me-modal-close:hover {
+    color: #f4511e;
+}
+
+
+/* MODAL CONTENT */
+
+.me-modal-body {
+    padding: 30px 38px;
+    overflow-y: auto;
+    flex: 1;
+}
+
+
+/* SIX SEMESTER CARDS */
+
+.me-curriculum-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.me-semester-card {
+    min-height: 155px;
+    padding: 20px;
+
+    background: #ffffff;
+    border: 1px solid #ededed;
+    border-radius: 6px;
+
+    box-shadow: 0 2px 9px rgba(0, 0, 0, 0.05);
+}
+
+.me-semester-card h3 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: #173d57;
+
+    padding-bottom: 9px;
+    margin: 0 0 11px;
+
+    border-bottom: 2px solid #f4511e;
+}
+
+.me-semester-card ul {
+    padding-left: 15px;
+    margin: 0;
+}
+
+.me-semester-card li {
+    font-size: 11px;
+    line-height: 1.6;
+    color: #555555;
+    margin-bottom: 5px;
+}
+
+.me-semester-placeholder {
+    font-size: 11px;
+    line-height: 1.5;
+    color: #999999;
+}
+
+.me-curriculum-note {
+    font-size: 12px;
+    color: #777777;
+    text-align: center;
+    margin: 18px 0 0;
+}
+
+.me-curriculum-note[hidden] {
+    display: none !important;
+}
+
+
+/* PREVENT BACKGROUND SCROLL */
+
+body.me-modal-open {
+    overflow: hidden;
+}
+
+
+/* ==========================================
+   QUIZ SECTION
+========================================== */
+
+.me-quiz {
+    width: 100%;
+    margin: 48px auto 0;
+}
+
+.me-quiz h2 {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.4;
+    color: #222222;
+    margin: 0 0 28px;
+}
+
+.me-quiz-box {
+    width: 88%;
+    min-height: 105px;
+    margin: 0 auto;
+    padding: 18px 20px;
+    background: #ffffff;
+    border-radius: 6px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.12);
+}
+
+.me-quiz-box p {
+    font-size: 10px;
+    font-weight: 600;
+    margin: 0 0 17px;
+}
+
+.me-quiz-options {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+}
+
+.me-quiz-option {
+    padding: 9px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 10px;
+    color: #333333;
+    background: transparent;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.me-quiz-option.selected {
+    border-color: #f4511e;
+}
+
+.me-quiz-progress {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 13px;
+}
+
+.me-quiz-progress span {
+    width: 17px;
+    height: 6px;
+    border-radius: 20px;
+    background: #dddddd;
+}
+
+.me-quiz-progress .current {
+    width: 27px;
+    background: #173d57;
+}
+
+.me-quiz-next {
+    display: block;
+    margin: 10px 0 0 auto;
+    padding: 6px 14px;
+    color: #ffffff;
+    background: #f4511e;
+    border: none;
+    border-radius: 4px;
+    font-size: 9px;
+}
+
+
+/* ==========================================
+   TABLET RESPONSIVENESS
+========================================== */
+
+@media (max-width: 900px) {
+
+    .me-page {
+        width: 90%;
+    }
+
+    .me-type-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .me-subject-grid {
+        gap: 18px;
+    }
+
+    .me-modal {
+        max-width: 94%;
+    }
+
+    .me-modal-header {
+        padding: 22px 28px;
+    }
+
+    .me-modal-body {
+        padding: 25px 28px;
+    }
+
+    .me-semester-card {
+        padding: 15px;
+    }
+}
+
+
+/* ==========================================
+   MOBILE RESPONSIVENESS
+========================================== */
+
+@media (max-width: 600px) {
+
+    .me-page {
+        width: 90%;
+        padding-top: 20px;
+    }
+
+    .me-type-grid {
+        grid-template-columns: 1fr;
+        margin-bottom: 45px;
+    }
+
+    .me-subject-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 15px;
+    }
+
+    .me-subject-photo {
+        height: 110px;
+    }
+
+    .me-subject-info {
+        padding: 8px;
+    }
+
+    .me-quiz-box {
+        width: 100%;
+    }
+
+    .me-modal-overlay {
+        padding: 12px;
+    }
+
+    .me-modal {
+        max-width: 100%;
+        min-height: 0;
+        max-height: 85vh;
+    }
+
+    .me-modal-header {
+        min-height: 80px;
+        padding: 15px 18px;
+    }
+
+    .me-modal-header h2 {
+        font-size: 22px;
+    }
+
+    .me-modal-header p {
+        font-size: 10px;
+    }
+
+    .me-modal-body {
+        padding: 17px;
+    }
+
+    .me-curriculum-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+    }
+
+    .me-semester-card {
+        min-height: 125px;
+        padding: 12px;
+    }
+
+    .me-semester-card h3 {
+        font-size: 13px;
+    }
+
+    .me-semester-card li {
+        font-size: 10px;
+    }
+
+    .me-quiz-options {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 380px) {
+
+    .me-subject-grid,
+    .me-curriculum-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .me-subject-photo {
+        height: 170px;
+    }
+}
+
+
+/* ==========================================
+   MINOR AND ELECTIVES PAGE
+   VISHWAKARMA UNIVERSITY
+========================================== */
+
+
+/* ==========================================
+   MAIN PAGE CONTAINER
+========================================== */
+
+.me-page {
+    width: 82%;
+    max-width: 1220px;
+    margin: 0 auto;
+    padding: 24px 0 65px;
+    background: #ffffff;
+}
+
+
+/* ==========================================
+   INTRODUCTION
+========================================== */
+
+.me-intro {
+    width: 100%;
+    margin-bottom: 28px;
+}
+
+.me-intro p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 12px;
+    line-height: 1.6;
+    color: #333333;
+    margin: 0;
+}
+
+
+/* ==========================================
+   FOUR COURSE TYPE CARDS
+========================================== */
+
+.me-type-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 16px;
+    margin-bottom: 75px;
+}
+
+.me-type-card {
+    min-width: 0;
+    min-height: 145px;
+    padding: 17px 15px;
+
+    background: #ffffff;
+    border-radius: 9px;
+
+    box-shadow: 0 3px 13px rgba(0, 0, 0, 0.09);
+}
+
+.me-type-heading {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    margin-bottom: 13px;
+}
+
+.me-type-icon {
+    width: 25px;
+    font-size: 23px;
+    line-height: 1;
+    color: #244966;
+}
+
+.me-type-heading h3 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 1.35;
+    color: #222222;
+    margin: 0;
+}
+
+.me-type-card ul {
+    padding-left: 14px;
+    margin: 0;
+}
+
+.me-type-card li {
+    font-size: 9px;
+    line-height: 1.5;
+    color: #777777;
+    margin-bottom: 8px;
+}
+
+
+/* ==========================================
+   MINOR AND NEP SUBJECTS
+========================================== */
+
+.me-subjects {
+    width: 100%;
+}
+
+.me-main-heading {
+    border-left: 4px solid #f4511e;
+    padding-left: 11px;
+    margin-bottom: 20px;
+}
+
+.me-main-heading h2 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 1.3;
+    color: #222222;
+    margin: 0;
+}
+
+.me-category {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.me-category-title {
+    display: inline-block;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 10px;
+    font-weight: 500;
+    color: #333333;
+
+    margin: 0 0 12px;
+
+    text-decoration: underline;
+    text-decoration-color: #e66a48;
+    text-underline-offset: 4px;
+}
+
+
+/* ==========================================
+   SUBJECT CARD GRID
+========================================== */
+
+.me-subject-grid {
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+
+    gap: 20px 28px;
+    align-items: stretch;
+}
+
+.me-subject-card {
+    min-width: 0;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    background: #ffffff;
+    border-radius: 7px;
+
+    overflow: hidden;
+
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.09);
+}
+
+
+/* ==========================================
+   STATIC SUBJECT IMAGES
+========================================== */
+
+.me-image-frame {
+    width: 100%;
+    height: 140px;
+    overflow: hidden;
+    background: #eeeeee;
+}
+
+.me-subject-photo {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: center;
+
+    border: none;
+    box-shadow: none;
+}
+
+
+/* ==========================================
+   SUBJECT CARD INFORMATION
+========================================== */
+
+.me-subject-info {
+    min-height: 118px;
+    flex: 1;
+
+    padding: 9px 11px 10px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.me-subject-info h4 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 1.35;
+
+    color: #222222;
+
+    margin: 0 0 5px;
+}
+
+.me-subject-info p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 9px;
+    line-height: 1.4;
+
+    color: #777777;
+
+    margin: 0 0 9px;
+    min-height: 34px;
+}
+
+
+/* ==========================================
+   SUBJECT TAGS
+========================================== */
+
+.me-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+
+    margin-bottom: 9px;
+}
+
+.me-tags span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #f0f1f3;
+    color: #555555;
+
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 8px;
+    line-height: 1.2;
+
+    padding: 4px 10px;
+    border-radius: 15px;
+}
+
+
+/* ==========================================
+   VIEW CURRICULUM
+========================================== */
+
+.me-curriculum-link {
+    align-self: flex-end;
+    margin-top: auto;
+
+    padding: 2px 0;
+
+    background: transparent;
+    border: none;
+
+    color: #8b4d3b;
+
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 8px;
+
+    text-decoration: underline;
+    text-underline-offset: 2px;
+
+    cursor: pointer;
+}
+
+.me-curriculum-link:hover {
+    color: #f4511e;
+}
+
+
+/* ==========================================
+   CURRICULUM MODAL OVERLAY
+========================================== */
+
+.me-modal-overlay {
+    position: fixed;
+    inset: 0;
+
+    z-index: 10000;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+
+    background: rgba(0, 0, 0, 0.26);
+}
+
+/* Hidden until View curriculum is clicked */
+
+.me-modal-overlay[hidden] {
+    display: none !important;
+}
+
+
+/* ==========================================
+   WHITE MODAL PANEL
+========================================== */
+
+.me-modal {
+    position: relative;
+
+    width: 920px;
+    max-width: 85vw;
+
+    height: 715px;
+    max-height: 88vh;
+
+    display: flex;
+    flex-direction: column;
+
+    background: #ffffff;
+
+    border-radius: 7px;
+    overflow: hidden;
+
+    box-shadow: none;
+
+    outline: none;
+}
+
+
+/* ==========================================
+   MODAL HEADER
+========================================== */
+
+.me-modal-header {
+    width: 100%;
+    height: 133px;
+    min-height: 133px;
+
+    padding: 0 55px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: #ffffff;
+
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.me-modal-header h2 {
+    font-family: 'Source Sans Pro', sans-serif;
+
+    font-size: 34px;
+    font-weight: 600;
+
+    color: #173d57;
+
+    margin: 0;
+}
+
+
+/* ==========================================
+   MODAL CLOSE BUTTON
+========================================== */
+
+.me-modal-close {
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: transparent;
+    border: none;
+
+    font-family: Arial, sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 1;
+
+    color: #173d57;
+
+    cursor: pointer;
+}
+
+.me-modal-close:hover {
+    color: #f4511e;
+}
+
+
+/* ==========================================
+   TWO-COLUMN MODAL BODY
+========================================== */
+
+.me-modal-body {
+    width: 100%;
+    flex: 1;
+    min-height: 0;
+
+    display: grid;
+
+    grid-template-columns: 42% 58%;
+
+    background: #ffffff;
+}
+
+
+/* ==========================================
+   LEFT COLUMN - SEMESTERS
+========================================== */
+
+.me-semester-column {
+    width: 100%;
+    height: 100%;
+
+    display: grid;
+    grid-template-rows: repeat(6, minmax(0, 1fr));
+
+    border-right: 1px solid #e5e5e5;
+}
+
+.me-semester-row {
+    width: 100%;
+    min-height: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 12px;
+
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+
+    line-height: 1.4;
+    text-align: center;
+
+    color: #222222;
+}
+
+
+/* ==========================================
+   RIGHT COLUMN - SUBJECT NAMES
+========================================== */
+
+.me-subject-column {
+    width: 100%;
+    height: 100%;
+
+    display: grid;
+    grid-template-rows: repeat(6, minmax(0, 1fr));
+}
+
+.me-subject-row {
+    width: 100%;
+    min-height: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    padding: 12px 35px 12px 70px;
+
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+
+    line-height: 1.5;
+    text-align: left;
+
+    color: #222222;
+}
+
+
+/* ==========================================
+   EMPTY CURRICULUM MESSAGE
+========================================== */
+
+.me-curriculum-empty {
+    grid-column: 1 / -1;
+
+    align-self: center;
+
+    padding: 20px 30px;
+
+    color: #888888;
+    font-size: 13px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+
+/* ==========================================
+   BACKGROUND SCROLL LOCK
+========================================== */
+
+body.me-modal-open {
+    overflow: hidden;
+}
+
+
+/* ==========================================
+   QUIZ SECTION
+========================================== */
+
+.me-quiz {
+    width: 100%;
+    margin: 48px auto 0;
+}
+
+.me-quiz h2 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.4;
+
+    color: #222222;
+
+    margin: 0 0 28px;
+}
+
+.me-quiz-box {
+    width: 88%;
+    min-height: 105px;
+
+    margin: 0 auto;
+    padding: 18px 20px;
+
+    background: #ffffff;
+
+    border-radius: 6px;
+
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.12);
+}
+
+.me-quiz-box p {
+    font-size: 10px;
+    font-weight: 600;
+    margin: 0 0 17px;
+}
+
+.me-quiz-options {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+}
+
+.me-quiz-options span {
+    padding: 9px;
+    font-size: 10px;
+    text-align: center;
+    color: #333333;
+}
+
+.me-quiz-options span:last-child {
+    border: 1px solid #f4511e;
+    border-radius: 3px;
+}
+
+.me-quiz-progress {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+
+    margin-top: 13px;
+}
+
+.me-quiz-progress span {
+    width: 17px;
+    height: 6px;
+
+    border-radius: 20px;
+    background: #dddddd;
+}
+
+.me-quiz-progress .current {
+    width: 27px;
+    background: #173d57;
+}
+
+.me-quiz-next {
+    display: block;
+
+    margin: 10px 0 0 auto;
+    padding: 6px 14px;
+
+    color: #ffffff;
+    background: #f4511e;
+
+    border: none;
+    border-radius: 4px;
+
+    font-size: 9px;
+}
+
+
+/* ==========================================
+   TABLET RESPONSIVENESS
+========================================== */
+
+@media (max-width: 900px) {
+
+    .me-page {
+        width: 90%;
+    }
+
+    .me-type-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .me-modal {
+        width: 90vw;
+        height: 680px;
+    }
+
+    .me-modal-header {
+        padding: 0 35px;
+    }
+
+    .me-subject-row {
+        padding-left: 40px;
+    }
+
+}
+
+
+/* ==========================================
+   MOBILE RESPONSIVENESS
+========================================== */
+
+@media (max-width: 600px) {
+
+    .me-page {
+        width: 90%;
+        padding-top: 20px;
+    }
+
+    .me-type-grid {
+        grid-template-columns: 1fr;
+        margin-bottom: 45px;
+    }
+
+    .me-subject-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 15px;
+    }
+
+    .me-image-frame {
+        height: 110px;
+    }
+
+    .me-subject-info {
+        padding: 8px;
+    }
+
+    .me-quiz-box {
+        width: 100%;
+    }
+
+    .me-modal-overlay {
+        padding: 12px;
+    }
+
+    .me-modal {
+        width: 100%;
+        max-width: 100%;
+        height: 85vh;
+        max-height: 85vh;
+    }
+
+    .me-modal-header {
+        height: 85px;
+        min-height: 85px;
+        padding: 0 18px;
+    }
+
+    .me-modal-header h2 {
+        font-size: 23px;
+    }
+
+    .me-modal-body {
+        grid-template-columns: 38% 62%;
+    }
+
+    .me-semester-row {
+        font-size: 12px;
+        padding: 7px;
+    }
+
+    .me-subject-row {
+        font-size: 12px;
+        padding: 7px 12px;
+    }
+
+    .me-quiz-options {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+@media (max-width: 380px) {
+
+    .me-subject-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .me-image-frame {
+        height: 170px;
+    }
+
+}
+
+
+/* =========================================
+   MINOR AND ELECTIVES
+   VISHWAKARMA UNIVERSITY
+========================================= */
+
+
+/* =========================================
+   PAGE LAYOUT
+========================================= */
+
+.me-page {
+    width: 82%;
+    max-width: 1380px;
+    margin: 0 auto;
+    padding: 38px 0 90px;
+    background: #ffffff;
+}
+
+.me-intro {
+    width: 100%;
+    margin-bottom: 28px;
+}
+
+.me-intro p {
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 12px;
+    line-height: 1.65;
+    color: #333333;
+}
+
+
+/* =========================================
+   COURSE TYPE CARDS
+========================================= */
+
+.me-type-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 18px;
+    width: 100%;
+    margin-bottom: 85px;
+}
+
+.me-type-card {
+    min-width: 0;
+    min-height: 170px;
+    padding: 20px 17px;
+
+    background: #ffffff;
+    border: 1px solid #f1f1f1;
+    border-radius: 8px;
+
+    box-shadow: 0 3px 11px rgba(0, 0, 0, 0.08);
+}
+
+.me-type-heading {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 16px;
+}
+
+.me-icon {
+    width: 25px;
+    height: 25px;
+    flex-shrink: 0;
+    color: #244d6c;
+}
+
+.me-type-heading h3 {
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 1.35;
+    color: #222222;
+}
+
+.me-type-card ul {
+    margin: 0;
+    padding-left: 14px;
+}
+
+.me-type-card li {
+    margin-bottom: 8px;
+    color: #777777;
+    font-size: 9px;
+    line-height: 1.5;
+}
+
+
+/* =========================================
+   SUBJECT SECTION HEADING
+========================================= */
+
+.me-subjects {
+    width: 100%;
+}
+
+.me-main-heading {
+    border-left: 4px solid #f4511e;
+    padding-left: 11px;
+    margin-bottom: 20px;
+}
+
+.me-main-heading h2 {
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 21px;
+    line-height: 1.3;
+    font-weight: 600;
+    color: #222222;
+}
+
+
+/* =========================================
+   CATEGORY HEADINGS
+========================================= */
+
+.me-category {
+    width: 100%;
+    margin-bottom: 32px;
+}
+
+.me-category-title {
+    display: inline-block;
+    margin: 0 0 13px;
+
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 10px;
+    font-weight: 500;
+    color: #333333;
+
+    text-decoration: underline;
+    text-decoration-color: #d96b4c;
+    text-underline-offset: 4px;
+}
+
+
+/* =========================================
+   SUBJECT CARD GRID
+
+   Three columns.
+   The unused third column remains empty
+   when a category has only two cards.
+========================================= */
+
+.me-subject-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px 28px;
+    width: 100%;
+    align-items: stretch;
+}
+
+.me-subject-card {
+    width: 100%;
+    min-width: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    overflow: hidden;
+
+    background: #ffffff;
+    border: 1px solid #f0f0f0;
+    border-radius: 8px;
+
+    box-shadow: 0 3px 11px rgba(0, 0, 0, 0.09);
+}
+
+
+/* =========================================
+   SUBJECT IMAGES
+========================================= */
+
+.me-image-frame {
+    width: 100%;
+    height: 220px;
+    flex-shrink: 0;
+    overflow: hidden;
+    background: #eeeeee;
+}
+
+.me-subject-photo {
+    display: block;
+    width: 100%;
+    height: 100%;
+
+    max-width: none;
+
+    object-fit: cover;
+    object-position: center;
+
+    border: none;
+    box-shadow: none;
+}
+
+
+/* =========================================
+   SUBJECT CARD INFORMATION
+========================================= */
+
+.me-subject-info {
+    flex: 1;
+    min-height: 155px;
+
+    padding: 12px 14px 13px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.me-subject-info h4 {
+    margin: 0 0 5px;
+
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.35;
+
+    color: #222222;
+}
+
+.me-subject-info p {
+    margin: 0 0 12px;
+
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 10px;
+    line-height: 1.45;
+
+    color: #777777;
+    min-height: 35px;
+}
+
+
+/* =========================================
+   TOPIC TAGS
+========================================= */
+
+.me-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 12px;
+}
+
+.me-tags span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    min-width: 40px;
+    padding: 4px 11px;
+
+    border-radius: 20px;
+    background: #f0f1f3;
+
+    color: #555555;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 8px;
+    line-height: 1.2;
+}
+
+
+/* =========================================
+   VIEW CURRICULUM LINK
+========================================= */
+
+.me-curriculum-link {
+    display: inline-block;
+    align-self: flex-end;
+    margin-top: auto;
+
+    padding: 2px 0;
+
+    background: transparent;
+    border: none;
+
+    color: #8b4d3b;
+
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 9px;
+
+    text-decoration: underline;
+    text-underline-offset: 2px;
+
+    cursor: pointer;
+}
+
+.me-curriculum-link:hover {
+    color: #f4511e;
+}
+
+
+/* =========================================
+   QUIZ SECTION
+========================================= */
+
+.me-quiz {
+    width: 100%;
+    margin-top: 50px;
+}
+
+.me-quiz h2 {
+    margin: 0 0 25px;
+
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.45;
+
+    color: #222222;
+}
+
+.me-quiz-box {
+    width: 88%;
+    min-height: 105px;
+
+    margin: 0 auto;
+    padding: 18px 20px;
+
+    background: #ffffff;
+    border: 1px solid #eeeeee;
+    border-radius: 6px;
+
+    box-shadow: 0 3px 11px rgba(0, 0, 0, 0.12);
+}
+
+.me-quiz-box p {
+    margin: 0 0 17px;
+    font-size: 10px;
+    font-weight: 600;
+}
+
+.me-quiz-options {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+}
+
+.me-quiz-option {
+    padding: 9px;
+
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 10px;
+
+    color: #333333;
+    background: transparent;
+
+    border: 1px solid transparent;
+    border-radius: 3px;
+
+    cursor: pointer;
+}
+
+.me-quiz-option.selected {
+    border-color: #f4511e;
+}
+
+.me-quiz-progress {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 13px;
+}
+
+.me-quiz-progress span {
+    width: 17px;
+    height: 6px;
+    border-radius: 20px;
+    background: #dddddd;
+}
+
+.me-quiz-progress .current {
+    width: 27px;
+    background: #173d57;
+}
+
+.me-quiz-next {
+    display: block;
+    margin: 10px 0 0 auto;
+    padding: 6px 14px;
+
+    color: white;
+    background: #f4511e;
+
+    border: none;
+    border-radius: 4px;
+
+    font-size: 9px;
+    cursor: pointer;
+}
+
+
+/* =========================================
+   CURRICULUM MODAL
+========================================= */
+
+.me-modal-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 10000;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px;
+
+    background: rgba(0, 0, 0, 0.26);
+}
+
+.me-modal-overlay[hidden] {
+    display: none !important;
+}
+
+
+/* WHITE MODAL PANEL */
+
+.me-modal {
+    width: 920px;
+    max-width: calc(100vw - 50px);
+
+    height: 715px;
+    max-height: calc(100vh - 50px);
+
+    display: flex;
+    flex-direction: column;
+
+    background: #ffffff;
+    border-radius: 7px;
+
+    overflow: hidden;
+
+    outline: none;
+    box-shadow: none;
+}
+
+
+/* MODAL HEADER */
+
+.me-modal-header {
+    height: 133px;
+    min-height: 133px;
+    flex-shrink: 0;
+
+    padding: 0 55px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: #ffffff;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.me-modal-header h2 {
+    margin: 0;
+
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 34px;
+    font-weight: 600;
+
+    color: #173d57;
+}
+
+
+/* MODAL CLOSE BUTTON */
+
+.me-modal-close {
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0;
+
+    border: none;
+    background: transparent;
+
+    font-family: Arial, sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+
+    color: #173d57;
+    cursor: pointer;
+}
+
+.me-modal-close:hover {
+    color: #f4511e;
+}
+
+
+/* BODY WITH TWO COLUMNS */
+
+.me-modal-body {
+    width: 100%;
+    flex: 1;
+    min-height: 0;
+
+    display: grid;
+    grid-template-columns: 42.7% 57.3%;
+
+    background: #ffffff;
+}
+
+
+/* LEFT COLUMN */
+
+.me-semester-column {
+    display: grid;
+    grid-template-rows: repeat(6, minmax(0, 1fr));
+
+    min-width: 0;
+    min-height: 0;
+
+    border-right: 1px solid #e5e5e5;
+}
+
+.me-semester-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 0;
+    padding: 12px;
+
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.4;
+
+    text-align: center;
+    color: #222222;
+}
+
+
+/* RIGHT COLUMN */
+
+.me-subject-column {
+    display: grid;
+    grid-template-rows: repeat(6, minmax(0, 1fr));
+
+    min-width: 0;
+    min-height: 0;
+}
+
+.me-subject-row {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    min-height: 0;
+    padding: 12px 30px 12px 70px;
+
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.4;
+
+    color: #222222;
+}
+
+
+
+/* =========================================
+   SCROLL LOCK WHEN MODAL IS OPEN
+========================================= */
+
+body.me-modal-open {
+    overflow: hidden;
+}
+
+
+/* =========================================
+   FOOTER
+
+   Continue using your existing shared
+   university-footer styles in style.css.
+========================================= */
+
+
+/* =========================================
+   RESPONSIVE TABLET
+========================================= */
+
+@media (max-width: 1000px) {
+
+    .me-page {
+        width: 90%;
+    }
+
+    .me-type-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .me-subject-grid {
+        gap: 20px;
+    }
+
+    .me-image-frame {
+        height: 190px;
+    }
+
+    .me-modal {
+        width: 90vw;
+        height: 680px;
+    }
+
+    .me-modal-header {
+        padding: 0 35px;
+    }
+
+    .me-subject-row {
+        padding-left: 40px;
+    }
+
+}
+
+
+/* =========================================
+   RESPONSIVE MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+    .me-page {
+        width: 90%;
+        padding-top: 22px;
+    }
+
+    .me-type-grid {
+        grid-template-columns: 1fr;
+        margin-bottom: 48px;
+    }
+
+    .me-subject-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 15px;
+    }
+
+    .me-image-frame {
+        height: 120px;
+    }
+
+    .me-subject-info {
+        padding: 9px;
+    }
+
+    .me-quiz-box {
+        width: 100%;
+    }
+
+    .me-modal-overlay {
+        padding: 12px;
+    }
+
+    .me-modal {
+        width: 100%;
+        max-width: 100%;
+        height: 85vh;
+        max-height: 85vh;
+    }
+
+    .me-modal-header {
+        height: 85px;
+        min-height: 85px;
+        padding: 0 18px;
+    }
+
+    .me-modal-header h2 {
+        font-size: 23px;
+    }
+
+    .me-modal-body {
+        grid-template-columns: 38% 62%;
+    }
+
+    .me-semester-row {
+        font-size: 13px;
+        padding: 7px;
+    }
+
+    .me-subject-row {
+        font-size: 12px;
+        padding: 7px 12px 7px 18px;
+    }
+
+    .me-quiz-options {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+@media (max-width: 380px) {
+
+    .me-subject-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .me-image-frame {
+        height: 170px;
+    }
+
+}
+
+
+/* PROGRAM STRUCTURE HERO IMAGE */
+
+.program-hero {
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)),
+        url("../Images%20and%20assets/prgram%20structure%20hero.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}

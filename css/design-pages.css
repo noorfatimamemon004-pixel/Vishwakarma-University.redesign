@@ -1,0 +1,1196 @@
+
+/* =========================================
+   VISHWAKARMA UNIVERSITY
+   SHARED SPECIALISATION DETAIL PAGES
+   Product Design / UI UX / Graphic Design
+========================================= */
+
+
+/* =========================================
+   GLOBAL SETTINGS
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    overflow-x: hidden;
+    background: #fff;
+    color: #222;
+
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+button,
+input {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+/* =========================================
+   TOP CONTACT BAR
+========================================= */
+
+.top-bar {
+    min-height: 27px;
+    background: #173d57;
+    color: #fff;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 5px 7%;
+    gap: 15px;
+
+    font-size: 9px;
+}
+
+.top-left,
+.top-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    white-space: nowrap;
+}
+
+.top-bar a {
+    color: #fff;
+}
+
+.top-bar input {
+    width: 65px;
+    height: 17px;
+    border: none;
+    padding: 3px;
+    font-size: 9px;
+}
+
+
+/* =========================================
+   MAIN HEADER
+========================================= */
+
+.main-header {
+    min-height: 48px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 5px 7%;
+    gap: 20px;
+}
+
+.university-logo,
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    flex-shrink: 0;
+}
+
+.logo-box {
+    width: 36px;
+    height: 34px;
+
+    background: #e96132;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: Georgia, serif;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.logo-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1;
+
+    color: #173d57;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.logo-text strong {
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.logo-text span {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.logo-text small {
+    font-size: 7px;
+    text-align: right;
+    margin-top: 3px;
+}
+
+.main-navigation {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 13px;
+
+    font-size: 10px;
+    white-space: nowrap;
+}
+
+.main-navigation a {
+    transition: color 0.2s ease;
+}
+
+.main-navigation a:hover {
+    color: #f45112;
+}
+
+.enquire-button {
+    background: #173d57;
+    color: white !important;
+
+    padding: 9px 12px;
+    border-radius: 3px;
+}
+
+
+/* =========================================
+   ANNOUNCEMENT BAR
+========================================= */
+
+.announcement-bar {
+    min-height: 24px;
+
+    background: #173d57;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 5px 7%;
+    font-size: 9px;
+}
+
+.announcement-bar div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.announcement-bar a {
+    color: white;
+}
+
+.announcement-bar a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================================
+   BREADCRUMB
+========================================= */
+
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    padding: 17px 7% 10px;
+    gap: 8px;
+
+    color: #f45112;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================================
+   PROGRAM NAVIGATION
+========================================= */
+
+.program-navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 7px 7% 13px;
+    gap: 22px;
+
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.program-navigation a {
+    position: relative;
+
+    flex-shrink: 0;
+
+    font-size: 14px;
+    padding: 7px 2px;
+
+    color: #222;
+}
+
+.program-navigation a:hover {
+    color: #f45112;
+}
+
+/* Specialisations remains selected on all
+   three detail pages */
+
+.program-navigation a.active {
+    font-weight: 700;
+    color: #222;
+}
+
+.program-navigation a.active::after {
+    content: "";
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+    height: 2px;
+
+    background: #f45112;
+}
+
+
+/* =========================================
+   HERO SECTION
+========================================= */
+
+.detail-hero {
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: 47% 53%;
+
+    min-height: 325px;
+    align-items: stretch;
+}
+
+.detail-hero-copy {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 35px 30px 35px 12.5%;
+    min-width: 0;
+}
+
+.detail-title {
+    border-left: 4px solid #f45112;
+
+    padding: 6px 0 6px 13px;
+    margin-bottom: 15px;
+}
+
+.detail-title h1 {
+    font-size: clamp(27px, 2.4vw, 38px);
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+.hero-description {
+    max-width: 440px;
+
+    font-size: 14px;
+    line-height: 1.55;
+
+    margin-bottom: 23px;
+}
+
+.detail-hero-image {
+    width: 100%;
+    min-height: 325px;
+    height: 100%;
+
+    overflow: hidden;
+}
+
+.detail-hero-image img {
+    width: 100%;
+    height: 100%;
+
+    min-height: 325px;
+
+    object-fit: cover;
+    object-position: center;
+}
+
+
+/* =========================================
+   COURSE INFORMATION
+========================================= */
+
+.course-meta {
+    display: flex;
+    align-items: flex-start;
+    gap: 35px;
+    margin-top: 2px;
+}
+
+.course-meta div {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.course-meta span {
+    font-size: 11px;
+    color: #777;
+}
+
+.course-meta strong {
+    font-size: 13px;
+    font-weight: 600;
+}
+
+
+/* =========================================
+   CORE MODULES SECTION
+========================================= */
+
+.modules-section {
+    width: 80%;
+    max-width: 1100px;
+
+    margin: 55px auto 45px;
+}
+
+.section-heading {
+    border-left: 4px solid #f45112;
+
+    padding: 4px 0 4px 14px;
+    margin-bottom: 42px;
+}
+
+.section-heading h2 {
+    font-size: clamp(25px, 2.2vw, 32px);
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+.section-heading p {
+    font-size: 13px;
+    line-height: 1.5;
+    color: #555;
+}
+
+
+/* =========================================
+   MODULE GRID
+========================================= */
+
+.module-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+
+    gap: 18px;
+}
+
+.module-card {
+    background: #fff;
+
+    min-height: 212px;
+
+    padding: 19px 17px 15px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    border-radius: 11px;
+
+    box-shadow:
+        0 3px 12px rgba(0, 0, 0, 0.09);
+
+    border: 1px solid #f2f2f2;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.module-card:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 7px 18px rgba(0, 0, 0, 0.12);
+}
+
+
+/* ICON BOXES */
+
+.module-icon {
+    width: 34px;
+    height: 34px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 9px;
+
+    font-size: 17px;
+    margin-bottom: 12px;
+}
+
+.module-icon.orange {
+    background: #ff9800;
+}
+
+.module-icon.blue {
+    background: #3784ff;
+}
+
+.module-icon.green {
+    background: #05c65c;
+}
+
+.module-icon.purple {
+    background: #aa40f5;
+}
+
+.module-icon.pink {
+    background: #ed3193;
+}
+
+.module-icon.violet {
+    background: #6259ff;
+}
+
+
+/* MODULE TEXT */
+
+.module-card h3 {
+    font-size: 17px;
+    font-weight: 500;
+
+    margin-bottom: 7px;
+    line-height: 1.3;
+}
+
+.module-card > p {
+    color: #666;
+
+    font-size: 11px;
+    line-height: 1.45;
+
+    margin-bottom: 15px;
+}
+
+
+/* KEY TOPICS */
+
+.topic-area {
+    margin-top: auto;
+    width: 100%;
+}
+
+.topic-area > span {
+    display: block;
+
+    font-size: 9px;
+    color: #777;
+
+    margin-bottom: 6px;
+}
+
+.topic-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.topic-tags small {
+    background: #f2f3f6;
+
+    border-radius: 20px;
+
+    padding: 4px 8px;
+
+    font-size: 9px;
+    color: #555;
+    line-height: 1.2;
+}
+
+
+/* =========================================
+   GRADUATION PROJECT
+========================================= */
+
+.graduation-project {
+    width: 80%;
+    max-width: 1100px;
+
+    margin: 35px auto 75px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    min-height: 215px;
+
+    background: white;
+
+    border-radius: 11px;
+    overflow: hidden;
+
+    box-shadow:
+        0 3px 13px rgba(0, 0, 0, 0.09);
+}
+
+.graduation-copy {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 28px 30px;
+}
+
+.graduation-copy h2 {
+    font-size: 20px;
+    font-weight: 400;
+
+    margin-bottom: 8px;
+}
+
+.graduation-copy > p {
+    font-size: 11px;
+    line-height: 1.5;
+    color: #666;
+
+    margin-bottom: 18px;
+}
+
+.project-points {
+    list-style: none;
+
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.project-points li {
+    font-size: 11px;
+    color: #555;
+
+    position: relative;
+    padding-left: 17px;
+}
+
+.project-points li::before {
+    content: "✓";
+
+    position: absolute;
+    left: 0;
+
+    color: #16bd68;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.graduation-image {
+    width: 100%;
+    height: 100%;
+    min-height: 215px;
+    overflow: hidden;
+}
+
+.graduation-image img {
+    width: 100%;
+    height: 100%;
+
+    min-height: 215px;
+
+    object-fit: cover;
+    object-position: center;
+}
+
+
+/* =========================================
+   A GLIMPSE GALLERY
+========================================= */
+
+.glimpse-section {
+    width: 78%;
+    max-width: 1050px;
+
+    margin: 0 auto 100px;
+}
+
+.glimpse-section .section-heading {
+    margin-bottom: 30px;
+}
+
+.glimpse-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 55px;
+}
+
+.glimpse-grid img {
+    width: 100%;
+    aspect-ratio: 1.1 / 1;
+
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.glimpse-no-heading {
+    margin-top: 95px;
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+.university-footer {
+    width: 100%;
+    background: #093d55;
+    color: #fff;
+}
+
+.footer-inner {
+    width: 85%;
+    max-width: 1100px;
+
+    margin: auto;
+
+    padding: 23px 0 45px;
+}
+
+.footer-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-bottom: 14px;
+
+    border-bottom: 1px solid rgba(255,255,255,0.35);
+}
+
+.footer-logo .logo-text {
+    color: #fff;
+}
+
+.social-links {
+    display: flex;
+    gap: 4px;
+}
+
+.social-links a {
+    width: 21px;
+    height: 21px;
+
+    background: #244e83;
+
+    color: white;
+
+    font-size: 10px;
+    font-weight: bold;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-links a:nth-child(2) {
+    background: #111;
+}
+
+.social-links a:nth-child(3) {
+    background: #c62828;
+}
+
+.social-links a:nth-child(4) {
+    background: #1877a8;
+}
+
+.social-links a:nth-child(5) {
+    background: #d62976;
+}
+
+
+/* FOOTER COLUMNS */
+
+.footer-columns {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr 1.2fr 1fr 1.6fr;
+
+    gap: 20px;
+    padding-top: 20px;
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    gap: 8px;
+
+    font-size: 9px;
+    line-height: 1.45;
+}
+
+.footer-column h4 {
+    font-size: 10px;
+    margin-bottom: 3px;
+}
+
+.footer-column a {
+    color: rgba(255,255,255,0.88);
+}
+
+.footer-column a:hover {
+    text-decoration: underline;
+}
+
+.footer-column p {
+    color: rgba(255,255,255,0.9);
+}
+
+.contact-column strong {
+    font-size: 9px;
+}
+
+.map-placeholder {
+    width: 100%;
+    min-height: 115px;
+
+    background: #e6e6e6;
+    color: #17425b;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    padding: 10px;
+
+    font-size: 10px;
+}
+
+
+/* FOOTER COPYRIGHT */
+
+.footer-bottom {
+    min-height: 38px;
+
+    padding: 10px 7%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 12px;
+
+    background: #07354a;
+
+    font-size: 8px;
+}
+
+
+/* =========================================
+   RESPONSIVE - TABLETS
+========================================= */
+
+@media (max-width: 1000px) {
+
+    .top-right {
+        display: none;
+    }
+
+    .main-header {
+        flex-wrap: wrap;
+    }
+
+    .main-navigation {
+        gap: 10px;
+    }
+
+    .detail-hero {
+        grid-template-columns: 46% 54%;
+    }
+
+    .detail-hero-copy {
+        padding-left: 8%;
+        padding-right: 20px;
+    }
+
+    .modules-section,
+    .graduation-project {
+        width: 88%;
+    }
+
+    .glimpse-section {
+        width: 85%;
+    }
+
+    .footer-columns {
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 30px;
+    }
+
+}
+
+
+/* =========================================
+   RESPONSIVE - MOBILE
+========================================= */
+
+@media (max-width: 700px) {
+
+    .top-bar {
+        justify-content: center;
+    }
+
+    .top-left {
+        flex-wrap: wrap;
+        justify-content: center;
+        font-size: 9px;
+    }
+
+    .main-header {
+        flex-direction: column;
+        justify-content: center;
+        padding: 12px 5%;
+    }
+
+    .main-navigation {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        white-space: normal;
+
+        gap: 12px;
+        font-size: 11px;
+    }
+
+    .announcement-bar {
+        justify-content: center;
+    }
+
+    .announcement-bar div {
+        display: none;
+    }
+
+    .breadcrumb {
+        padding-left: 5%;
+        padding-right: 5%;
+        font-size: 12px;
+    }
+
+    .program-navigation {
+        padding-left: 5%;
+        padding-right: 5%;
+        justify-content: flex-start;
+        gap: 25px;
+    }
+
+    .program-navigation a {
+        font-size: 13px;
+    }
+
+
+    /* HERO */
+
+    .detail-hero {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .detail-hero-copy {
+        padding: 35px 7%;
+        order: 2;
+    }
+
+    .detail-hero-image {
+        order: 1;
+        min-height: 240px;
+        height: 280px;
+    }
+
+    .detail-hero-image img {
+        min-height: 240px;
+    }
+
+    .detail-title h1 {
+        font-size: 30px;
+    }
+
+    .hero-description {
+        font-size: 14px;
+    }
+
+    .course-meta {
+        gap: 30px;
+    }
+
+
+    /* MODULES */
+
+    .modules-section {
+        width: 88%;
+        margin-top: 45px;
+    }
+
+    .section-heading {
+        margin-bottom: 25px;
+    }
+
+    .module-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 13px;
+    }
+
+    .module-card {
+        min-height: 225px;
+        padding: 15px 12px;
+    }
+
+
+    /* GRADUATION */
+
+    .graduation-project {
+        width: 88%;
+        grid-template-columns: 1fr;
+        margin-top: 35px;
+    }
+
+    .graduation-copy {
+        padding: 25px;
+    }
+
+    .graduation-image {
+        height: 220px;
+        min-height: 220px;
+    }
+
+    .graduation-image img {
+        min-height: 220px;
+    }
+
+
+    /* GLIMPSE */
+
+    .glimpse-section {
+        width: 88%;
+    }
+
+    .glimpse-grid {
+        gap: 15px;
+    }
+
+    .glimpse-grid img {
+        aspect-ratio: 1 / 1;
+    }
+
+
+    /* FOOTER */
+
+    .footer-columns {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+
+}
+
+
+/* =========================================
+   RESPONSIVE - SMALL MOBILE
+========================================= */
+
+@media (max-width: 420px) {
+
+    .module-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .module-card {
+        min-height: 190px;
+    }
+
+    .glimpse-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-columns {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+/* =========================================
+   EXPANDED CORE MODULES
+   Applies to all three design pages
+========================================= */
+
+.modules-section {
+    width: 88%;
+    max-width: 1350px;
+    margin: 55px auto 55px;
+}
+
+.module-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+}
+
+.module-card {
+    width: 100%;
+    min-height: 240px;
+    padding: 23px 21px 19px;
+}
+
+/* Tablet */
+
+@media (max-width: 900px) {
+    .modules-section {
+        width: 90%;
+    }
+
+    .module-grid {
+        gap: 16px;
+    }
+}
+
+/* Mobile */
+
+@media (max-width: 650px) {
+    .modules-section {
+        width: 90%;
+    }
+
+    .module-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 420px) {
+    .module-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* =========================================
+   A GLIMPSE - UPDATED IMAGE
+========================================= */
+
+.glimpse-single {
+    grid-template-columns: minmax(0, 1fr);
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.glimpse-single img {
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 6px;
+}
+/* ===== Same menu as Student Works / Admission Process ===== */
+body {
+  background: #fff;
+}
+
+.top-bar, .contact-strip,
+.main-header, .site-header,
+.announcement-bar, .announce-bar {
+  padding-left: 60px !important;
+  padding-right: 60px !important;
+}
+
+.breadcrumb {
+  max-width: 1250px !important;
+  margin: 0 auto !important;
+  padding: 22px 30px 10px !important;
+  font-size: 17px !important;
+  font-weight: 600 !important;
+  color: #f26a2e !important;
+  background: #fff !important;
+}
+.breadcrumb a { color: #f26a2e !important; text-decoration: none; }
+.breadcrumb span { color: #888 !important; margin: 0 6px; }
+.breadcrumb span:last-child { color: #f26a2e !important; }
+
+.program-navigation, .programme-nav {
+  max-width: 1250px !important;
+  margin: 0 auto !important;
+  padding: 14px 30px 24px !important;
+  display: flex !important;
+  justify-content: space-between !important;
+  flex-wrap: wrap !important;
+  gap: 10px !important;
+  overflow-x: visible !important;
+  background: #fff !important;
+}
+.program-navigation a, .programme-nav a {
+  font-size: 15px !important;
+  padding: 4px 10px 6px !important;
+  color: #222 !important;
+  text-decoration: none;
+  border-bottom: 2px solid transparent !important;
+}
+.program-navigation a:hover, .programme-nav a:hover { color: #f26a2e !important; }
+.program-navigation a.active, .programme-nav a.active {
+  font-weight: 700 !important;
+  border-bottom-color: #f26a2e !important;
+}
+
+@media (max-width: 900px) {
+  .top-bar, .contact-strip,
+  .main-header, .site-header,
+  .announcement-bar, .announce-bar {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+  .breadcrumb,
+  .program-navigation, .programme-nav {
+    padding-left: 18px !important;
+    padding-right: 18px !important;
+  }
+}

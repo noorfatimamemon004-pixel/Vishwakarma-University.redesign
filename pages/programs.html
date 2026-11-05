@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Programs | Vishwakarma University</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: "Source Sans Pro", "Segoe UI", Arial, sans-serif; background: #fff; color: #222; }
+a { text-decoration: none; color: inherit; }
+
+.contact { background: #12304f; color: #fff; font-size: 13px; padding: 10px 60px; display: flex; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
+.contact-left { display: flex; gap: 24px; flex-wrap: wrap; }
+.header { display: flex; align-items: center; justify-content: space-between; padding: 8px 60px; flex-wrap: wrap; gap: 10px; }
+.logo { height: 58px; width: auto; }
+.menu { display: flex; align-items: center; gap: 22px; font-size: 14px; font-weight: 600; flex-wrap: wrap; }
+.enquire { background: #12304f; color: #fff; padding: 9px 18px; border-radius: 4px; }
+.announce { background: #12304f; color: #fff; padding: 0 60px; height: 38px; display: flex; align-items: center; gap: 12px; font-size: 13px; overflow: hidden; white-space: nowrap; }
+
+/* ---- Programs ---- */
+.programs { max-width: 1250px; margin: 0 auto; padding: 40px 30px 80px; }
+.title { font-size: 30px; font-weight: 700; border-left: 6px solid #f26a2e; padding-left: 14px; margin-bottom: 26px; }
+.search { width: 100%; max-width: 420px; padding: 12px 16px; border: 1px solid #ccc; border-radius: 6px; font-size: 15px; margin-bottom: 18px; display: block; }
+.chips { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 34px; }
+.chip { padding: 8px 18px; border: 1px solid #ccc; border-radius: 30px; font-size: 14px; }
+.chip.active { background: #f26a2e; border-color: #f26a2e; color: #fff; font-weight: 600; }
+
+.cards { display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; }
+.card { width: 360px; border: 1px solid #e2e2e2; border-radius: 12px; overflow: hidden; background: #fff; box-shadow: 0 2px 10px rgba(0,0,0,.06); display: flex; flex-direction: column; }
+.card img { width: 100%; height: 220px; object-fit: cover; display: block; background: #eee; }
+.card-body { padding: 18px 20px 22px; display: flex; flex-direction: column; gap: 8px; flex: 1; }
+.card h3 { font-size: 19px; color: #12304f; }
+.card .sub { font-size: 14px; color: #555; }
+.card .dur { font-size: 14px; font-weight: 600; color: #f26a2e; }
+.learn { margin-top: auto; align-self: flex-start; background: #12304f; color: #fff; padding: 9px 20px; border-radius: 4px; font-size: 14px; font-weight: 600; }
+.learn:hover { background: #f26a2e; }
+
+/* ---- Footer ---- */
+.footer { background: #0a3a5c; color: #fff; padding: 40px 60px 0; }
+.footer-inner { max-width: 1250px; margin: 0 auto; }
+.footer .logo { margin-bottom: 24px; }
+.cols { display: grid; grid-template-columns: repeat(5, 1fr); gap: 28px; border-top: 1px solid rgba(255,255,255,.3); padding-top: 28px; }
+.cols h4 { font-size: 13px; margin-bottom: 14px; }
+.cols a { display: block; font-size: 12px; margin-bottom: 12px; opacity: .9; }
+.cols p { font-size: 12px; line-height: 1.6; margin-bottom: 12px; }
+.copy { max-width: 1250px; margin: 30px auto 0; padding: 18px 0; font-size: 11px; opacity: .85; }
+
+@media (max-width: 900px) {
+  .contact, .header, .announce, .footer { padding-left: 20px; padding-right: 20px; }
+  .card { width: 100%; }
+  .cols { grid-template-columns: 1fr 1fr; }
+}
+</style>
+</head>
+<body>
+
+<div class="contact">
+  <div class="contact-left">
+    <span>✉ admissions@vupune.ac.in</span>
+    <span>📞 +919590300911 (Admission Enquiry) / 8530164186 (Other Enquiry)</span>
+  </div>
+  <div>Alumni | Blog | Careers &amp; Placements | Events | Media | Research | IQAC | NAAC | NIRF | NSS | Contact Us</div>
+</div>
+
+<header class="header">
+  <img src="/site-assets/vu-logo.png" alt="Vishwakarma University" class="logo">
+  <nav class="menu">
+    <a href="#">About</a><a href="#">Academics</a><a href="#">Admissions</a><a href="#">Centers</a>
+    <a href="#">Industry Connect</a><a href="#">Our People</a><a href="#">Students</a><a href="#">Life@VU</a><a href="#">Exams</a>
+    <a href="#" class="enquire">Enquire Now</a>
+  </nav>
+</header>
+
+<div class="announce"><strong>Announcements :</strong> <span>Applications for faculty positions &nbsp;|&nbsp; Convocation Notification (2025) &nbsp;|&nbsp; International Conference</span></div>
+
+<main class="programs">
+  <h1 class="title">PROGRAMS</h1>
+  <input class="search" type="text" placeholder="Search programs..." readonly>
+  <div class="chips">
+    <span class="chip active">Art and Design</span>
+    <span class="chip">Architecture</span>
+    <span class="chip">Commerce &amp; Management</span>
+    <span class="chip">Law</span>
+    <span class="chip">Media &amp; Communication</span>
+    <span class="chip">Pharmacy</span>
+    <span class="chip">Science &amp; Technology</span>
+  </div>
+
+  <div class="cards">
+    <div class="card">
+      <img src="/Images%20and%20assets/Bachelors%20of%20design.png" alt="Bachelor of Design">
+      <div class="card-body">
+        <h3>Bachelor of Design</h3>
+        <p class="sub">Product, Visual Communication, UI/UX</p>
+        <p class="dur">4 Years</p>
+        <a class="learn" href="/index.html">Learn more</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="/Images%20and%20assets/Bachelors%20of%20arts.png" alt="Bachelor of Arts">
+      <div class="card-body">
+        <h3>Bachelor of Arts</h3>
+        <p class="sub">Animation and Multimedia</p>
+        <p class="dur">4 Years</p>
+        <a class="learn" href="/index.html">Learn more</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="/Images%20and%20assets/Masters%20of%20Arts%20(Animation%20and%20Multimedia).png" alt="Masters of Arts">
+      <div class="card-body">
+        <h3>Masters of Arts</h3>
+        <p class="sub">Animation and Multimedia</p>
+        <p class="dur">2 Years</p>
+        <a class="learn" href="/index.html">Learn more</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="/Images%20and%20assets/Bachelor%20of%20Fashion%20Technology.png" alt="Bachelor of Fashion Technology">
+      <div class="card-body">
+        <h3>Bachelor of Fashion Technology</h3>
+        <p class="sub">Fashion and Apparel</p>
+        <p class="dur">4 Years</p>
+        <a class="learn" href="/index.html">Learn more</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="/Images%20and%20assets/Masters%20of%20Arts%20(Fashion%20and%20Apparel%20Design).png" alt="Masters of Arts Fashion and Apparel Design">
+      <div class="card-body">
+        <h3>Masters of Arts</h3>
+        <p class="sub">Fashion and Apparel Design</p>
+        <p class="dur">2 Years</p>
+        <a class="learn" href="/index.html">Learn more</a>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <img src="/site-assets/vu-logo.png" alt="Vishwakarma University" class="logo">
+    <div class="cols">
+      <div><h4>NAVIGATION</h4><a href="#">Home</a><a href="#">About Us</a><a href="#">Academics</a><a href="#">Centres Of Excellence</a><a href="#">Our People</a><a href="#">Student Facilitation Centre</a><a href="#">Life @ VU</a><a href="#">Examinations</a><a href="#">Committees</a></div>
+      <div><h4>QUICK LINKS</h4><a href="#">Alumni</a><a href="#">Blog</a><a href="#">Student Grievance Redressal Portal</a><a href="#">News And Media</a><a href="#">International Community</a><a href="#">Academic Calendar</a><a href="#">Holiday List</a><a href="#">Faculty Notices</a></div>
+      <div><h4>PROGRAMMES</h4><a href="#">Art &amp; Design</a><a href="#">Architecture</a><a href="#">Commerce &amp; Management</a><a href="#">Humanities &amp; Social Sciences</a><a href="#">Law</a><a href="#">Media &amp; Communication</a><a href="#">Pharmacy</a><a href="#">Science &amp; Technology</a></div>
+      <div><h4>ADMISSIONS</h4><a href="#">Admission Enquiry</a><a href="#">Study In India</a><a href="#">International Admissions</a><a href="#">Programme Brochures</a><a href="#">Entrance Test (VUNET)</a><a href="#">Admission Process</a></div>
+      <div><h4>CONTACT US</h4>
+        <p>REGISTERED OFFICE:<br>Vishwakarma University<br>Survey No. 2, 3, 4 Laxmi Nagar, Kondhwa Budruk, Pune - 411 048.<br>Maharashtra, India.</p>
+        <p>📞 +919590300911 (Admission Enquiry)<br>8530164186 (Other Enquiry)</p>
+        <p>✉ admissions@vupune.ac.in</p>
+      </div>
+    </div>
+  </div>
+  <div class="copy">Copyright © Vishwakarma University, Pune 2025 All rights reserved.</div>
+</footer>
+
+</body>
+</html>

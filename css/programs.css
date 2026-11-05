@@ -1,0 +1,65 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: "Source Sans Pro", "Segoe UI", Arial, sans-serif; background: #fff; color: #222; }
+a { text-decoration: none; color: inherit; }
+
+/* ---------- Header ---------- */
+.ph-contact { background: #12304f; color: #fff; font-size: 13px; padding: 10px 60px; display: flex; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
+.ph-contact-left { display: flex; gap: 24px; flex-wrap: wrap; }
+.ph-header { display: flex; align-items: center; justify-content: space-between; padding: 8px 60px; background: #fff; flex-wrap: wrap; gap: 10px; }
+.ph-logo { height: 58px; }
+.ph-menu { display: flex; align-items: center; gap: 22px; font-size: 14px; font-weight: 600; flex-wrap: wrap; }
+.ph-enquire { background: #12304f; color: #fff; padding: 9px 18px; border-radius: 4px; }
+.ph-announce { background: #12304f; color: #fff; padding: 0 60px; height: 38px; display: flex; align-items: center; gap: 30px; font-size: 13px; overflow: hidden; white-space: nowrap; }
+.ph-breadcrumb { max-width: 1250px; margin: 0 auto; padding: 22px 30px 10px; font-size: 17px; font-weight: 600; color: #f26a2e; }
+
+/* ---------- Programme nav ---------- */
+.ph-prognav { max-width: 1250px; margin: 0 auto; padding: 14px 30px 24px; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px; }
+.ph-prognav a { font-size: 15px; padding: 4px 10px 6px; border-bottom: 2px solid transparent; color: #222; }
+.ph-prognav a.active { font-weight: 700; border-bottom-color: #f26a2e; }
+
+/* ---------- Gallery ---------- */
+.ph-gallery { max-width: 1250px; margin: 0 auto; padding: 20px 30px 80px; display: flex; flex-direction: column; gap: 34px; }
+.ph-row { display: flex; gap: 40px; height: 330px; }
+.ph-row .ph-item:nth-child(1) { flex: var(--a) 1 0; }
+.ph-row .ph-item:nth-child(2) { flex: var(--b) 1 0; }
+
+.ph-item { position: relative; overflow: hidden; border-radius: 14px; cursor: pointer; background: #ddd; margin: 0; }
+.ph-item img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transition: opacity .4s ease, transform .6s ease; }
+.ph-bw { opacity: 0; }
+
+/* dark shadow layer */
+.ph-item::after { content: ""; position: absolute; inset: 0; background: rgba(0, 0, 0, .55); opacity: 0; transition: opacity .4s ease; pointer-events: none; }
+
+/* caption */
+.ph-item figcaption { position: absolute; left: 0; right: 0; bottom: 0; z-index: 2; padding: 22px; color: #fff; font-size: 22px; font-weight: 700; opacity: 0; transform: translateY(14px); transition: opacity .4s ease, transform .4s ease; }
+
+/* hover state (and tap state on touch) */
+.ph-item:hover .ph-bw,
+.ph-item.active .ph-bw { opacity: 1; }
+.ph-item:hover::after,
+.ph-item.active::after { opacity: 1; }
+.ph-item:hover figcaption,
+.ph-item.active figcaption { opacity: 1; transform: translateY(0); }
+.ph-item:hover img,
+.ph-item.active img { transform: scale(1.04); }
+
+/* ---------- Footer ---------- */
+.ph-footer { background: #0a3a5c; color: #fff; padding: 40px 60px 0; }
+.ph-footer-inner { max-width: 1250px; margin: 0 auto; }
+.ph-footer-logo { height: 58px; margin-bottom: 24px; }
+.ph-cols { display: grid; grid-template-columns: repeat(5, 1fr); gap: 28px; border-top: 1px solid rgba(255,255,255,.3); padding-top: 28px; }
+.ph-cols h4 { font-size: 13px; margin-bottom: 14px; }
+.ph-cols a { display: block; font-size: 12px; margin-bottom: 12px; opacity: .9; }
+.ph-cols a:hover { text-decoration: underline; }
+.ph-cols p { font-size: 12px; line-height: 1.6; margin-bottom: 12px; }
+.ph-copy { max-width: 1250px; margin: 30px auto 0; padding: 18px 0; font-size: 11px; opacity: .85; }
+
+/* ---------- Responsive ---------- */
+@media (max-width: 900px) {
+  .ph-contact, .ph-header, .ph-announce, .ph-footer { padding-left: 20px; padding-right: 20px; }
+  .ph-row { flex-direction: column; height: auto; gap: 20px; }
+  .ph-row .ph-item { flex: none !important; height: 240px; }
+  .ph-gallery { gap: 20px; }
+  .ph-cols { grid-template-columns: 1fr 1fr; }
+  .ph-prognav { justify-content: flex-start; }
+}

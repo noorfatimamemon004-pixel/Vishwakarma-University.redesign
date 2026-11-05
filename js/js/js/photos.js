@@ -1,0 +1,10 @@
+// Hover works with CSS only. This adds tap support for phones/tablets.
+document.querySelectorAll('.ph-item').forEach(function (item) {
+  item.addEventListener('click', function () {
+    var wasActive = item.classList.contains('active');
+    document.querySelectorAll('.ph-item.active').forEach(function (i) {
+      i.classList.remove('active');
+    });
+    if (!wasActive) item.classList.add('active');
+  });
+});

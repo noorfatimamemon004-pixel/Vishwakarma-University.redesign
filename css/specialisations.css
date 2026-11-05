@@ -1,0 +1,1187 @@
+
+/* =========================================
+   SPECIALISATIONS PAGE
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #222;
+    background: #fff;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* =========================================
+   TOP CONTACT BAR
+========================================= */
+
+.top-bar {
+    min-height: 27px;
+    background: #173d57;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 5px 6.5%;
+    font-size: 9px;
+    gap: 15px;
+}
+
+.top-left,
+.top-right {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    white-space: nowrap;
+}
+
+.top-bar a {
+    color: white;
+}
+
+.top-bar input {
+    width: 65px;
+    height: 17px;
+    border: none;
+    padding: 3px;
+    font-size: 9px;
+}
+
+
+/* =========================================
+   MAIN HEADER
+========================================= */
+
+.main-header {
+    min-height: 47px;
+    padding: 5px 6.5%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 20px;
+}
+
+.university-logo,
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    flex-shrink: 0;
+}
+
+.logo-box {
+    width: 35px;
+    height: 32px;
+
+    background: #e96132;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Georgia, serif;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+font-family: 'Source Sans Pro', sans-serif;
+
+.logo-text strong {
+    font-size: 13px;
+}
+
+.logo-text span {
+    font-size: 11px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.logo-text small {
+    font-size: 6px;
+    text-align: right;
+    margin-top: 2px;
+}
+
+.main-navigation {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 14px;
+    font-size: 9px;
+    white-space: nowrap;
+}
+
+.main-navigation a:hover {
+    color: #f45112;
+}
+
+.enquire-button {
+    background: #173d57;
+    color: white !important;
+    padding: 9px 12px;
+    border-radius: 3px;
+}
+
+
+/* =========================================
+   ANNOUNCEMENT BAR
+========================================= */
+
+.announcement-bar {
+    min-height: 23px;
+    background: #173d57;
+    color: #fff;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 4px 6.5%;
+    font-size: 8px;
+}
+
+.announcement-bar div {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.announcement-bar a {
+    color: white;
+}
+
+.announcement-bar a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================================
+   BREADCRUMB
+========================================= */
+
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+    padding: 16px 7% 8px;
+    font-size: 10px;
+    color: #f45112;
+    font-weight: 500;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================================
+   SECONDARY NAVIGATION
+========================================= */
+
+.program-navigation {
+    padding: 5px 7% 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+
+    white-space: nowrap;
+    overflow-x: auto;
+}
+
+.program-navigation a {
+    position: relative;
+    padding: 6px 2px;
+    font-size: 10px;
+    color: #222;
+    flex-shrink: 0;
+}
+
+.program-navigation a:hover {
+    color: #f45112;
+}
+
+.program-navigation a.active::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+    height: 1px;
+    background: #f45112;
+}
+
+
+/* =========================================
+   MAIN SPECIALISATIONS CONTAINER
+========================================= */
+
+.specialisations-container {
+    width: 92%;
+    max-width: 1180px;
+    margin: 20px auto 100px;
+}
+
+
+/* =========================================
+   INDIVIDUAL SPECIALISATION SECTION
+========================================= */
+
+.specialisation-section {
+    display: grid;
+    grid-template-columns: 60% 40%;
+
+    align-items: start;
+    column-gap: 35px;
+
+    margin-bottom: 66px;
+    padding: 10px 0;
+}
+
+.specialisation-content {
+    min-width: 0;
+}
+
+.specialisation-heading {
+    border-left: 4px solid #f45112;
+    padding: 8px 0 8px 13px;
+    margin-bottom: 9px;
+}
+
+.specialisation-heading h1 {
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 1.3;
+}
+
+.specialisation-heading h1 a {
+    transition: color 0.2s ease;
+}
+
+.specialisation-heading h1 a:hover {
+    color: #f45112;
+}
+
+.specialisation-tagline {
+    font-size: 11px;
+    line-height: 1.6;
+    margin: 0 0 12px 17px;
+}
+
+.specialisation-description {
+    font-size: 11px;
+    line-height: 1.55;
+    max-width: 540px;
+    margin: 0 0 27px 17px;
+}
+
+
+/* =========================================
+   CAREER LIST
+========================================= */
+
+.major-content {
+    margin-left: 17px;
+}
+
+.list-heading {
+    font-size: 10px;
+    margin-bottom: 17px;
+    color: #666;
+}
+
+.career-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 22px;
+    row-gap: 12px;
+
+    padding-left: 17px;
+    margin-bottom: 12px;
+
+    color: #666;
+    font-size: 10px;
+    line-height: 1.5;
+}
+
+.career-list li {
+    padding-left: 1px;
+}
+
+
+/* =========================================
+   RECOMMENDED MINORS VIEW
+========================================= */
+
+.minor-content {
+    margin-left: 17px;
+}
+
+.minor-introduction {
+    font-size: 11px;
+    line-height: 1.5;
+    max-width: 520px;
+    color: #666;
+    margin-bottom: 13px;
+}
+
+.minor-list {
+    padding-left: 20px;
+    color: #666;
+    font-size: 11px;
+    line-height: 1.6;
+}
+
+.minor-list li {
+    margin-bottom: 13px;
+}
+
+
+/* =========================================
+   CTA BUTTONS
+========================================= */
+
+.minor-toggle,
+.back-to-major {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    background: #f45112;
+    color: white;
+
+    border: none;
+    border-radius: 5px;
+
+    font-family: inherit;
+    font-size: 11px;
+
+    padding: 10px 14px;
+    min-height: 34px;
+
+    cursor: pointer;
+    margin: 1px 0 0 2px;
+
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.minor-toggle span {
+    font-size: 17px;
+    line-height: 12px;
+}
+
+.minor-toggle:hover,
+.back-to-major:hover {
+    background: #d93f08;
+    transform: translateY(-1px);
+}
+
+/* Important: no decorative orange box behind either button */
+
+.back-to-major {
+    margin-top: 14px;
+}
+
+
+/* =========================================
+   IMAGE CARD
+========================================= */
+
+.specialisation-image {
+    position: relative;
+    width: 100%;
+
+    aspect-ratio: 1.67 / 1;
+    overflow: hidden;
+
+    border-radius: 4px;
+    margin: 53px 0 0;
+    background: #ddd;
+}
+
+.specialisation-image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+
+    object-fit: cover;
+    object-position: center;
+
+    transition: transform 0.4s ease;
+}
+
+.specialisation-image:hover img {
+    transform: scale(1.025);
+}
+
+.specialisation-image figcaption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+    padding: 30px 14px 12px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+
+    color: white;
+    font-size: 10px;
+    line-height: 1.4;
+
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.9),
+        rgba(0, 0, 0, 0)
+    );
+}
+
+.specialisation-image figcaption strong {
+    font-size: 11px;
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+.university-footer {
+    width: 100%;
+    background: #093d55;
+    color: white;
+}
+
+.footer-inner {
+    max-width: 1050px;
+    width: 85%;
+    margin: auto;
+    padding: 22px 0 45px;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-bottom: 14px;
+    border-bottom: 1px solid rgba(255,255,255,0.4);
+}
+
+.footer-logo .logo-text {
+    color: white;
+}
+
+.social-links {
+    display: flex;
+    gap: 4px;
+}
+
+.social-links a {
+    background: #244e83;
+    width: 20px;
+    height: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.social-links a:nth-child(2) {
+    background: #111;
+}
+
+.social-links a:nth-child(3) {
+    background: #c62828;
+}
+
+.social-links a:nth-child(4) {
+    background: #1877a8;
+}
+
+.social-links a:nth-child(5) {
+    background: #d62976;
+}
+
+.footer-columns {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr 1.2fr 1fr 1.6fr;
+    gap: 24px;
+
+    padding-top: 20px;
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+
+    font-size: 8px;
+    line-height: 1.4;
+}
+
+.footer-column h4 {
+    font-size: 9px;
+    margin-bottom: 3px;
+}
+
+.footer-column a {
+    color: rgba(255,255,255,0.85);
+}
+
+.footer-column a:hover {
+    text-decoration: underline;
+}
+
+.footer-column p {
+    color: rgba(255,255,255,0.9);
+}
+
+.contact-column strong {
+    font-size: 8px;
+}
+
+.map-placeholder {
+    width: 100%;
+    height: 115px;
+
+    background: #e6e6e6;
+    color: #17425b;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    padding: 10px;
+    font-size: 10px;
+}
+
+.footer-bottom {
+    min-height: 37px;
+    padding: 10px 7%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+
+    background: #07354a;
+    font-size: 7px;
+}
+
+
+/* =========================================
+   RESPONSIVE DESIGN
+========================================= */
+
+@media (max-width: 1000px) {
+
+    .main-navigation {
+        gap: 8px;
+        font-size: 8px;
+    }
+
+    .top-right {
+        display: none;
+    }
+
+    .specialisation-section {
+        grid-template-columns: 58% 42%;
+        column-gap: 20px;
+    }
+
+    .footer-columns {
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 30px;
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .top-bar {
+        justify-content: center;
+    }
+
+    .main-header {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 12px 5%;
+    }
+
+    .main-navigation {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        white-space: normal;
+        gap: 12px;
+    }
+
+    .announcement-bar {
+        justify-content: center;
+    }
+
+    .announcement-bar div {
+        display: none;
+    }
+
+    .breadcrumb {
+        padding-left: 5%;
+    }
+
+    .program-navigation {
+        padding-left: 5%;
+        justify-content: flex-start;
+        gap: 25px;
+    }
+
+    .specialisations-container {
+        width: 90%;
+        margin-top: 15px;
+        margin-bottom: 55px;
+    }
+
+    .specialisation-section {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin-bottom: 50px;
+    }
+
+    .specialisation-heading h1 {
+        font-size: 25px;
+    }
+
+    .specialisation-description {
+        max-width: 100%;
+    }
+
+    .career-list {
+        grid-template-columns: 1fr 1fr;
+        column-gap: 15px;
+        font-size: 10px;
+    }
+
+    .specialisation-image {
+        width: 100%;
+        margin-top: 5px;
+        aspect-ratio: 1.6 / 1;
+    }
+
+    .footer-columns {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+
+}
+
+
+@media (max-width: 420px) {
+
+    .career-list {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-columns {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+/* =========================================
+   UPDATED RESPONSIVE SPECIALISATIONS DESIGN
+   Source Sans Pro
+========================================= */
+
+body,
+button,
+input,
+select,
+textarea {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+/* MAIN PAGE WIDTH */
+
+.specialisations-container {
+    width: 90%;
+    max-width: 1600px;
+    margin: 30px auto 110px;
+}
+
+
+/* BREADCRUMB */
+
+.breadcrumb {
+    padding: 20px 7% 12px;
+    font-size: clamp(13px, 0.9vw, 16px);
+    font-weight: 500;
+    gap: 9px;
+}
+
+
+/* SECONDARY NAVIGATION */
+
+.program-navigation {
+    padding: 8px 7% 15px;
+    gap: 25px;
+}
+
+.program-navigation a {
+    font-size: clamp(13px, 0.9vw, 16px);
+    padding: 8px 2px;
+}
+
+/* Selected page: bold + orange underline */
+.program-navigation a.active {
+    font-weight: 700;
+    color: #222;
+}
+
+.program-navigation a.active::after {
+    height: 2px;
+}
+
+
+/* SPECIALISATION SECTIONS */
+
+.specialisation-section {
+    grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
+    column-gap: clamp(30px, 4vw, 65px);
+    margin-bottom: clamp(75px, 6vw, 110px);
+    padding: 10px 0;
+}
+
+
+/* HEADINGS */
+
+.specialisation-heading {
+    border-left: 5px solid #f45112;
+    padding: 8px 0 8px 17px;
+    margin-bottom: 14px;
+}
+
+.specialisation-heading h1 {
+    font-size: clamp(32px, 2.5vw, 46px);
+    line-height: 1.25;
+    font-weight: 400;
+}
+
+
+/* TAGLINE */
+
+.specialisation-tagline {
+    font-size: clamp(15px, 1vw, 18px);
+    line-height: 1.5;
+    margin-left: 22px;
+    margin-bottom: 20px;
+}
+
+
+/* DESCRIPTION */
+
+.specialisation-description {
+    font-size: clamp(15px, 1vw, 18px);
+    line-height: 1.55;
+    max-width: 760px;
+    margin-left: 22px;
+    margin-bottom: 48px;
+}
+
+
+/* CAREER CONTENT */
+
+.major-content {
+    margin-left: 22px;
+}
+
+.list-heading {
+    font-size: clamp(14px, 0.95vw, 17px);
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.career-list {
+    font-size: clamp(14px, 0.95vw, 17px);
+    line-height: 1.55;
+    column-gap: 30px;
+    row-gap: 16px;
+    margin-bottom: 22px;
+}
+
+
+/* MINORS VIEW */
+
+.minor-content {
+    margin-left: 22px;
+}
+
+.minor-introduction {
+    font-size: clamp(15px, 1vw, 18px);
+    line-height: 1.55;
+    max-width: 760px;
+    margin-bottom: 18px;
+}
+
+.minor-list {
+    font-size: clamp(15px, 1vw, 18px);
+    line-height: 1.7;
+}
+
+.minor-list li {
+    margin-bottom: 15px;
+}
+
+
+/* BUTTONS */
+
+.minor-toggle,
+.back-to-major {
+    font-size: clamp(14px, 0.95vw, 17px);
+    padding: 12px 18px;
+    min-height: 42px;
+    border-radius: 6px;
+}
+
+
+/* IMAGES */
+
+.specialisation-image {
+    width: 100%;
+    aspect-ratio: 1.67 / 1;
+    margin-top: clamp(40px, 3.5vw, 65px);
+    border-radius: 5px;
+}
+
+.specialisation-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* REMOVE ALL IMAGE CAPTIONS AND TEXT OVERLAYS */
+
+.specialisation-image figcaption {
+    display: none !important;
+}
+
+
+/* FOOTER TEXT */
+
+.footer-column {
+    font-size: 10px;
+}
+
+.footer-column h4 {
+    font-size: 11px;
+}
+
+
+/* =========================================
+   TABLET RESPONSIVENESS
+========================================= */
+
+@media (max-width: 1000px) {
+
+    .specialisations-container {
+        width: 92%;
+    }
+
+    .specialisation-section {
+        grid-template-columns: 1.1fr 0.9fr;
+        gap: 25px;
+    }
+
+    .specialisation-heading h1 {
+        font-size: 32px;
+    }
+
+    .career-list {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE RESPONSIVENESS
+========================================= */
+
+@media (max-width: 768px) {
+
+    .specialisations-container {
+        width: 90%;
+        margin-top: 25px;
+        margin-bottom: 60px;
+    }
+
+    .specialisation-section {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        margin-bottom: 65px;
+    }
+
+    .specialisation-heading h1 {
+        font-size: clamp(28px, 6vw, 34px);
+    }
+
+    .specialisation-tagline {
+        font-size: 15px;
+    }
+
+    .specialisation-description {
+        font-size: 15px;
+        margin-bottom: 30px;
+    }
+
+    .career-list {
+        font-size: 14px;
+        column-gap: 15px;
+        row-gap: 13px;
+    }
+
+    .specialisation-image {
+        width: 100%;
+        margin-top: 5px;
+        aspect-ratio: 1.6 / 1;
+    }
+
+    .program-navigation {
+        justify-content: flex-start;
+        overflow-x: auto;
+    }
+
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 480px) {
+
+    .career-list {
+        grid-template-columns: 1fr;
+    }
+
+    .breadcrumb {
+        font-size: 12px;
+        padding-left: 5%;
+    }
+
+    .program-navigation a {
+        font-size: 13px;
+    }
+
+    .footer-columns {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+/* =========================================
+   SPECIALISATIONS PAGE LAYOUT CORRECTION
+========================================= */
+
+/* Main page container */
+
+.specialisations-container {
+    display: block !important;
+    width: 90% !important;
+    max-width: 1600px;
+    margin: 30px auto 110px !important;
+    overflow: visible;
+}
+
+
+/* Each specialisation section */
+
+.specialisation-section {
+    display: grid !important;
+
+    grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr) !important;
+
+    align-items: start;
+    gap: 35px;
+
+    width: 100%;
+    margin: 0 0 85px;
+    padding: 10px 0;
+}
+
+
+/* Text must stay on the LEFT */
+
+.specialisation-section > .specialisation-content {
+    grid-column: 1;
+    grid-row: 1;
+
+    width: 100%;
+    min-width: 0;
+}
+
+
+/* Image must stay on the RIGHT */
+
+.specialisation-section > .specialisation-image {
+    grid-column: 2;
+    grid-row: 1;
+
+    display: block;
+    position: relative;
+
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1.67 / 1;
+
+    margin: 53px 0 0;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+
+/* Image sizing */
+
+.specialisation-image img {
+    display: block !important;
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+/* No image captions */
+
+.specialisation-image figcaption {
+    display: none !important;
+}
+
+
+/* Footer correction */
+
+.university-footer {
+    display: block;
+    position: relative;
+    width: 100%;
+    margin: 0;
+}
+
+
+/* =========================================
+   MOBILE LAYOUT
+========================================= */
+
+@media (max-width: 768px) {
+
+    .specialisation-section {
+        display: flex !important;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .specialisation-section > .specialisation-content,
+    .specialisation-section > .specialisation-image {
+        width: 100%;
+    }
+
+    .specialisation-section > .specialisation-image {
+        margin-top: 5px;
+    }
+
+}
+/* ===== Same menu as Student Works / Admission Process ===== */
+body {
+  background: #fff;
+}
+
+.top-bar,
+.main-header,
+.announcement-bar {
+  padding-left: 60px !important;
+  padding-right: 60px !important;
+}
+
+.breadcrumb {
+  max-width: 1250px !important;
+  margin: 0 auto !important;
+  padding: 22px 30px 10px !important;
+  font-size: 17px !important;
+  font-weight: 600 !important;
+  color: #f26a2e !important;
+  background: #fff !important;
+}
+.breadcrumb a { color: #f26a2e !important; text-decoration: none; }
+.breadcrumb span { color: #888 !important; margin: 0 6px; }
+.breadcrumb span:last-child { color: #f26a2e !important; }
+
+.program-navigation {
+  max-width: 1250px !important;
+  margin: 0 auto !important;
+  padding: 14px 30px 24px !important;
+  display: flex !important;
+  justify-content: space-between !important;
+  flex-wrap: wrap !important;
+  gap: 10px !important;
+  overflow-x: visible !important;
+  background: #fff !important;
+}
+.program-navigation a {
+  font-size: 15px !important;
+  padding: 4px 10px 6px !important;
+  color: #222 !important;
+  text-decoration: none;
+  border-bottom: 2px solid transparent !important;
+}
+.program-navigation a:hover { color: #f26a2e !important; }
+.program-navigation a.active {
+  font-weight: 700 !important;
+  border-bottom-color: #f26a2e !important;
+}
+
+@media (max-width: 900px) {
+  .top-bar,
+  .main-header,
+  .announcement-bar {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+  .breadcrumb,
+  .program-navigation {
+    padding-left: 18px !important;
+    padding-right: 18px !important;
+  }
+}
